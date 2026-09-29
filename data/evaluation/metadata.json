@@ -1,0 +1,62 @@
+{
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 910019,
+  "controls": [
+    "B1",
+    "B2",
+    "N",
+    "L"
+  ],
+  "coupling": "identical 10000 x 30 index matrix across methods, seeds and fractions; densities fixed",
+  "densities": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90
+  ],
+  "families": [
+    "A",
+    "P_L",
+    "P_G",
+    "J_L",
+    "J_G"
+  ],
+  "fractions": [
+    90,
+    95,
+    100
+  ],
+  "interval_scope": "95% pointwise conditional road bootstrap at fixed three models; average models per road before resampling; shared controls once; no training inference or global-grid intervals",
+  "lap_scope": "conditional successful-road means per seed; equal model weights only when all three means exist; paired intervals restricted to shared successful runs per seed",
+  "percentile_method": "linear",
+  "provenance": {
+    "A": "cpu_10m_matrix",
+    "J_G": "gpu_protocol_duplicate_nonbitwise_resume_generations_3_5_6; CPU J_G lines stopped at iteration 306",
+    "J_L": "cpu_10m_matrix",
+    "P_G": "cpu_10m_matrix",
+    "P_L": "cpu_10m_matrix"
+  },
+  "runs": 30,
+  "schema": "article2_main_series_v2",
+  "seed_dispersion": "sample SD ddof=1, not CI or SEM",
+  "seeds": [
+    20260914,
+    20260915,
+    20260916
+  ],
+  "sign_scope": "CI lower > 1e-12 / upper < -1e-12; point_sign retained separately"
+}

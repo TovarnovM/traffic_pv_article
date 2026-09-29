@@ -1,0 +1,78 @@
+{
+  "physical": {
+    "G": 15,
+    "P1": 0.999,
+    "P2": 0.99,
+    "P3": 0.98,
+    "P4": 0.01,
+    "S": 2,
+    "back_distance": 10,
+    "backend": "optimized",
+    "cooldown_steps": 1,
+    "front_distance": 30,
+    "measure_steps": 2000,
+    "num_lanes": 4,
+    "p_lane_change": 0.5,
+    "q": 0.99,
+    "r": 0.99,
+    "road_length": 1000,
+    "sensor_distance": 60,
+    "validate": false,
+    "vmax_hdv": 5,
+    "vmax_priority": 6,
+    "warmup_steps": 1000
+  },
+  "selection": {
+    "candidate_iterations": [
+      450,
+      500,
+      550,
+      600,
+      611
+    ],
+    "density_tokens": [
+      30
+    ],
+    "fraction_tokens": [
+      100
+    ],
+    "rejected_factor": 3.0,
+    "rejected_floor": 1.0,
+    "runs": 20,
+    "strict_speed_gap_threshold": 0.05,
+    "tiebreak_root": 620000,
+    "tiebreak_runs": 50,
+    "top_candidates_only": 2,
+    "validation_root": 610003
+  },
+  "test": {
+    "density_tokens": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90
+    ],
+    "fraction_tokens": [
+      90,
+      95,
+      100
+    ],
+    "root": 710009,
+    "runs": 30
+  },
+  "training_condition_order": "random permutation of the 12 density/fraction pairs; warmup cached by density, not repeated fresh on every reset"
+}

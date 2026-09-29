@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "data/evaluation/metadata.json": "4d7dc94b45b54eee5e1822d279e1b1e009338c1c442d5721b9ad157b895bf12b",
+    "data/evaluation/physical_rows.json.gz": "805691f3204c5208d896c0df3d86cfb0a4dcef3d6e1e435ec297d18eac9bc7f3",
+    "data/selection/winners.json": "bfed4d3c7a94b52c7cdc6ce9d0de9d08172c49408c4733637d42857115c0190f"
+  },
+  "metric_sha256": {
+    "background": "c57900f4c6a032b5f519e5ff432ca70f01057d7381824cffc230b172c1a749ec",
+    "conditions": "571d4b4f23729af466fae1531f56a7f5f305e6cd182f17b57901c83ddf77dd44",
+    "contrasts": "cd185b63d10dc54dbeff0ffe4914e0fd165773e1d748f6f596e69ef8c116fb25",
+    "laps": "2c506b298ed375e2f0ae69fa54b1dd749cfc230f850b17d8039c077f38764a46",
+    "selection": "a496a11f68cd533f1498b801e09117a7c766a4ea2181ef7ff261d6504d3b70d3",
+    "summary": "515a18baadcbc357ed0a24bcfb057f0172e13060e0d3c63c600d7d6c155e073a"
+  },
+  "origin": "sep_research/preliminary_gpu_paper/article2 (saved outputs, not replay-generated goldens)",
+  "schema": "immutable_original_publication_v1",
+  "table_sha256": {
+    "tables/main_background.tex": "5132bdcc243e8233651bd3b8490c7ac5936de17d144d6a62dea3212612dd4b2d",
+    "tables/main_contrasts.tex": "9e5a5e71e6e3a40345fe8a70bd5dbdc4d1cf48e10a770ef7649913dd345a07a3",
+    "tables/main_overview.tex": "c822c24ef5f077cbb2cc76f1cd29a6aac5117046bd63708bc1f477fa59c013d2",
+    "tables/main_selection.tex": "4527408ee43129b03651ef7309bc2536e781d985cb584e19afec33f443b513ad"
+  }
+}

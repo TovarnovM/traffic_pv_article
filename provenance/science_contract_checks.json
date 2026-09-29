@@ -1,0 +1,218 @@
+{
+  "all_public_hashes_match": true,
+  "checks": [
+    {
+      "line_id": "A-20260914",
+      "original_config_sha256": "8f1449e4987985ed71ceb3150f4ecca41125780e0a06ef87b52788a1f59c68aa",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "A-20260915",
+      "original_config_sha256": "4f362f999a761e40d73de74ef93609ab80105568df45c016942e7155fecc6ca9",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "A-20260916",
+      "original_config_sha256": "6a709cd3c27a31ac61d4dddb8e3def5123ce60f14ed55328a06f668ca92a7a72",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "J_L-20260914",
+      "original_config_sha256": "8bfd2bf47c7c430922680013b7686d1cf8d3193257497f5c0356dc74670e647c",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "J_L-20260915",
+      "original_config_sha256": "d41ebf674342176139336947ef31a4ce796fb66a07a72b6089032964e707aebc",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "J_L-20260916",
+      "original_config_sha256": "ac50ceed66f655f8bf86dd99cd88f32bc507b347a59f6b8fb2211e16514e6715",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "P_G-20260914",
+      "original_config_sha256": "e3567fbcc6e14b04527f2d243544ddf8fb88c3a48781dc81daee10e7f24d4827",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "P_G-20260915",
+      "original_config_sha256": "5d2d14bd282301a78321bea12591ee8117c8a032c2dd3d5fed0c3b6f308f7e5e",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "P_G-20260916",
+      "original_config_sha256": "48a0a7d4d6feedf394f7884e88b045696e719abc83e2edaa7c42f3dc961b914a",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "P_L-20260914",
+      "original_config_sha256": "b4e4a1c04baa72fc04c650119e5ed251d2e6c4bb6952c967fc9216e04d3cb6fb",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "P_L-20260915",
+      "original_config_sha256": "84ddcf8bd6d5279415284af7a6e78cc5bfd56cd5bf743f30ba1f1efa402c5d4a",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "P_L-20260916",
+      "original_config_sha256": "2c37a41b3f1f8a0c768938ed68cce890fb339184ce42572d0cda6793ab230b31",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "J_G-20260914",
+      "original_config_sha256": "d30779788773a962b7258d5961c3f0c87d5a077e34acb552a696e70725889f76",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "J_G-20260915",
+      "original_config_sha256": "0bffd3f962407277a0e26d17c5047bd8017d036f06759d27afaaeeb16cd9d2e6",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    },
+    {
+      "line_id": "J_G-20260916",
+      "original_config_sha256": "bf8589116c7f143f66ab2a9bb7243533032b2761108247d6cc1249ed00925be3",
+      "source_hashes": {
+        "sep_research/checkpoints.py": "4d01fe3c239d70dc9c90b21fe5daa7ab652e219db2f95ab94cfcea0340235ee3",
+        "sep_research/env.py": "98f11c1748a9747da067be3ad02780354824a1c9763af68fc76fb16c9dc7e6b6",
+        "sep_research/env_core.py": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+        "sep_research/inference.py": "489154e547e10ea80967f6b4334e144fbe9424616f77925a2d273a729c4d3510",
+        "sep_research/models.py": "112f6a0aabac0088ab086b8a3e22ad6bf1db7f6103a328ec78195d3f869169f4",
+        "sep_research/observations.py": "62deee961ef28405b534a474d7ecfaf2f4b698914b3440b06bae427d14e666ca",
+        "sep_research/protocol.py": "8d225bbc144e913adbd978fb6fe76114465b90da880d7095e96b1d80ee5bca70",
+        "sep_research/train.py": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6"
+      }
+    }
+  ],
+  "limitation": "Equality of eight scientific source hashes does not prove historical runtime import paths or exact historical environment.",
+  "line_count": 15,
+  "module_count": 8
+}

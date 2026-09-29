@@ -1,0 +1,43 @@
+{
+  "schema": "training_export_v1",
+  "inventory_sha256": "c31a37abf3847187e726828bef803f544e1886b733618517ba938c77286cadc2",
+  "source_files": 28,
+  "source_bytes": 626808690,
+  "accepted_rows": 9165,
+  "accepted_segments": 34,
+  "versions": {
+    "python": "3.11.10",
+    "numpy": "2.1.2",
+    "matplotlib": "3.10.0"
+  },
+  "data": {
+    "file": "progress.jsonl.gz",
+    "sha256": "dd988ba9cf88ead0ba2f742f96e7233980ff86a54e112619902d555f163ad9f6",
+    "bytes": 204228,
+    "uncompressed_bytes": 1886128,
+    "uncompressed_sha256": "21d4325d2324d563a620566f9ae55ccb26dec03222461b95e6a52e20b81e8a43",
+    "gzip_mtime": 0
+  },
+  "definition_sources": [
+    {
+      "path": "sep_research/train.py",
+      "sha256": "862f8392761ffc945c73fc95c4fa6befe7648cf00a814baaf8b68cd96d30f6f6",
+      "bytes": 29751,
+      "inventory_hash_verified": true
+    },
+    {
+      "path": "sep_research/env_core.py",
+      "sha256": "10117cd0b0716fca5f2fac45ecad15148100f93c42ffd48546eded32ad99003d",
+      "bytes": 19185,
+      "inventory_hash_verified": true
+    },
+    {
+      "path": "src/snfs_traffic/rl/centralized_pv_env.py",
+      "sha256": "032e1e1c0243b66a56e8fceab003a3da92d4424eb3540e0d51206b8023dbcc76",
+      "bytes": 21304,
+      "inventory_hash_verified": true
+    }
+  ],
+  "exporter_sha256": "5a8fea11c455bec667b19a4f63360dd7b942402c1d1305c9fe4a9f458c0808ab",
+  "scope": "Read-only source extraction; no model loading, training or simulation. All inventoried source hashes verified. Public rows contain only allowlisted fields."
+}

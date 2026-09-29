@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and the specific versioned release of this reproduction package. Release URL and DOI will be added after publication."
+type: software
+title: "Separate and joint reinforcement learning for priority-vehicle passage in mixed traffic: reproduction package"
+authors:
+  - family-names: Tovarnov
+    given-names: Mikhail S.
+  - family-names: Bykov
+    given-names: Nikita V.
+abstract: "Scientific code, compact per-road evaluation results, segmented training histories, and reproducibility procedures for the five-family priority-vehicle control study."
+keywords:
+  - reinforcement learning
+  - mixed traffic
+  - priority vehicle
+  - reproducibility

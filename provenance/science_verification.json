@@ -1,0 +1,160 @@
+{
+  "command_path_redaction": "Host workspace paths are replaced with <LOCAL_WORKSPACE>; these are historical execution records. Portable commands are in docs/SCIENTIFIC_REPRODUCTION.md.",
+  "commands": {
+    "acceptance": "python -I /workspace/review/tests/test_minimal_acceptance.py",
+    "existing_container_prefix": "timeout 120s devcontainer exec --workspace-folder <LOCAL_WORKSPACE> --config <LOCAL_WORKSPACE>/sep_research/gpu_duplicate_20260916/runtime/devcontainer.json env CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_CACHE_DIR=/tmp/review_science_numba MPLCONFIGDIR=/tmp/review_science_mpl",
+    "isolated_acceptance": "python -I /tmp/science-isolation-il4x06_5/review/tests/test_minimal_acceptance.py",
+    "manifest": "python -I /workspace/review/tests/test_scenarios.py",
+    "scenario": "python -I /workspace/review/scripts/prepare_scenarios.py --density-token 5 --run-index 0 --out-dir /workspace/review/build/verification/scenario_5_0"
+  },
+  "excluded_operations": [
+    "network",
+    "dependency_installation",
+    "checkpoint_loading",
+    "backward",
+    "SGD",
+    "training",
+    "full_evaluation",
+    "full_scenario_grid",
+    "commit",
+    "push"
+  ],
+  "isolated_run": {
+    "calls": 15,
+    "compiled_calls": 3,
+    "imported_modules": 44,
+    "status": "PASS",
+    "tests": 9
+  },
+  "manifest_test": "PASS, once in workspace and once in isolated temporary copy; no simulation",
+  "scenario": {
+    "backend": "optimized",
+    "physical": {
+      "G": 15,
+      "P1": 0.999,
+      "P2": 0.99,
+      "P3": 0.98,
+      "P4": 0.01,
+      "S": 2,
+      "back_distance": 10,
+      "backend": "optimized",
+      "cooldown_steps": 1,
+      "front_distance": 30,
+      "measure_steps": 2000,
+      "num_lanes": 4,
+      "p_lane_change": 0.5,
+      "q": 0.99,
+      "r": 0.99,
+      "road_length": 1000,
+      "sensor_distance": 60,
+      "validate": false,
+      "vmax_hdv": 5,
+      "vmax_priority": 6,
+      "warmup_steps": 1000
+    },
+    "road": {
+      "density_token": 5,
+      "physical_state_hash": "1d68978a88b6730f181b18243b79dbefb184970040f67c85ce41f39d8a1ccf6e",
+      "pre_av_tag_state_hash": "7db23337ff7a9ce5bbc55eb0e7821237116a52da7d77914f42e15a5920e7adf6",
+      "priority_vehicle_id": 143,
+      "pv_role_hash": "40ae7280e4f086df70c93362bbf47ece2f8edf8c6cc3be0a5fe21e1e7df0f90b",
+      "run_index": 0,
+      "scenario_key": "sep_canonical_v1:710009:0:0",
+      "vehicle_count": 200,
+      "warm_backend": "optimized",
+      "warmed_state_hash": "690ea44dbfe7ca5423ed011318a403f33162d5b2a665283026dbe3dfe6ba1005"
+    },
+    "role_assignments": [
+      {
+        "activated_state_hash": "81b92507c987d937ddd4e891b43170217d56f9f2082c112c820694127859db2b",
+        "av_subset_hash": "100b14cc24be5d9e3aec8f2896e2c22c86b911bcf8581c2725a13658b669d74e",
+        "fraction_token": 90,
+        "role_state_hash": "ae0194a9a74acd276d4866826c6924632994906049befe8ee85932eae1d24f00",
+        "scenario_key": "sep_canonical_v1:710009:0:0"
+      },
+      {
+        "activated_state_hash": "d00317503707f0cd62b2f2f569e45b966571a68797b4bbfbb431ae2b2f46c997",
+        "av_subset_hash": "8f5db696591b341c68b2083a1fccf94bdca69017b65f5a6443fc51d4966ce913",
+        "fraction_token": 95,
+        "role_state_hash": "bbe79edb9ae2fc0d9fabe2f7c874d0a125163e74dcbc5c078240bf6c2e523761",
+        "scenario_key": "sep_canonical_v1:710009:0:0"
+      },
+      {
+        "activated_state_hash": "759d5e9dfdee2f466140589cb2b70e901388d8bdbcc477aecf7cb3b8d0837c1f",
+        "av_subset_hash": "a00f4827115329d411c24783ad1075372c70d0f516d54b1b1c5185235ee62ec5",
+        "fraction_token": 100,
+        "role_state_hash": "df6beaf49f5a8f9d92ccdcc58c749f13a3af70c686fe3e0196e50a0baf0f896d",
+        "scenario_key": "sep_canonical_v1:710009:0:0"
+      }
+    ],
+    "seeds": [
+      {
+        "assignment_seed": 711009,
+        "av_selection_seed": 712009,
+        "canonical_density_id": 0,
+        "density_token": 5,
+        "fraction_token": 90,
+        "measurement_rng_seed": 710202,
+        "run_index": 0,
+        "scenario_key": "sep_canonical_v1:710009:0:0",
+        "scenario_seed": 710020,
+        "seed_schema": "sep_canonical_v1",
+        "split": "test",
+        "split_root": 710009,
+        "warmup_rng_seed": 710106
+      },
+      {
+        "assignment_seed": 711009,
+        "av_selection_seed": 712009,
+        "canonical_density_id": 0,
+        "density_token": 5,
+        "fraction_token": 95,
+        "measurement_rng_seed": 710202,
+        "run_index": 0,
+        "scenario_key": "sep_canonical_v1:710009:0:0",
+        "scenario_seed": 710020,
+        "seed_schema": "sep_canonical_v1",
+        "split": "test",
+        "split_root": 710009,
+        "warmup_rng_seed": 710106
+      },
+      {
+        "assignment_seed": 711009,
+        "av_selection_seed": 712009,
+        "canonical_density_id": 0,
+        "density_token": 5,
+        "fraction_token": 100,
+        "measurement_rng_seed": 710202,
+        "run_index": 0,
+        "scenario_key": "sep_canonical_v1:710009:0:0",
+        "scenario_seed": 710020,
+        "seed_schema": "sep_canonical_v1",
+        "split": "test",
+        "split_root": 710009,
+        "warmup_rng_seed": 710106
+      }
+    ],
+    "status": "PASS",
+    "warmup_steps": 1000
+  },
+  "source_adaptations": [],
+  "status": "PASS",
+  "test_port": "AST equality for all original functions and test class; path/manifest/output-only harness changes",
+  "training_cli_help": "PASS; no training executed",
+  "verification_scope": "One canonical warmup (1000 steps) plus two nine-test executions (30 counted calls total); no measurement campaign.",
+  "workspace_run": {
+    "calls": 15,
+    "compiled_calls": 3,
+    "imported_modules": 44,
+    "python": "3.11.10 | packaged by conda-forge | (main, Oct 16 2024, 01:27:36) [GCC 13.3.0]",
+    "status": "PASS",
+    "tests": 9,
+    "versions": {
+      "gymnasium": "1.2.2",
+      "numba": "0.67.0",
+      "numpy": "2.1.2",
+      "ray": "2.57.0",
+      "torch": "2.5.1+cu118"
+    }
+  }
+}

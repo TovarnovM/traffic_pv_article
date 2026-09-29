@@ -1,0 +1,141 @@
+{
+  "b1_physical_rows": 540,
+  "duplicate_control_wave_rows": 12960,
+  "full_row_dedup_before_projection": true,
+  "input_bytes": {
+    "data/evaluation/metadata.json": 1418,
+    "data/evaluation/physical_rows.json.gz": 1913573,
+    "data/selection/winners.json": 22447
+  },
+  "logical_rows": 30780,
+  "math_source_sha256": {
+    "background_line": "75fd1638e5d512fdf61a94fdea4edf7aa2a7251c7a33e15c7866b2e3ac4e9b58",
+    "calculate": "3c22f13c08239b40b5d1924ad60ed37d4057620280ed5af5ddf6417665faacc5",
+    "index_rows": "9310eeddbf4290880367576adaf329cc27a6c549ddcec3774598bf82ea6d6610",
+    "indices": "2071a8fce00f532243759c5b889f0933ca934a5e36a7bad05543c4ecadfcfab7",
+    "interval": "b6ff7a8c8f9e1e5303e7546e8becbcf5e54d311575de44b991bd09c0515c128b",
+    "interval_sign": "86958c2967b47a51a61c76d332d1182e409a9a512afade3b5f61f8138bae46c1",
+    "lap_line": "bc57f7b5903e0c43a6daec4d9c7b36b367afac4f7c3ef4931282693bc9180a50",
+    "road_difference": "09d6bc385c34a50548550bb6851956ee606a0f6d405a50733b2d1f134d7c5177",
+    "seed_stats": "7e6b9e076e1a8384682d03a40438f6e8245ba58276706dd40b7c90aa09eb4e00",
+    "summarize": "55dbb16a81d2411c64273a7a6c058e1b444a8601a04853190a9763e7315426b1"
+  },
+  "metadata_discrepancies": [
+    "Top-level winners in selection_jg_gpu_3seed.json contain only seeds 20260914 and 20260916; winner for seed 20260915 comes from selection_jg_gpu_seed15.json, checked against raw joint_checkpoint_id"
+  ],
+  "original_files_unchanged": true,
+  "original_hashes": {
+    "paper/plot_style.py": "fabf42682942570eb657ffbe47c211aa50cf5f32ddd641a25cbcc9fd058d1dec",
+    "sep_research/eval_selection_10m_20260925/combined_tables/conditions.json": "a7b35b6f2a8303f2da2cce0c2fc3ccc1f363ee5e428125e7cd628bc4c3a9ad83",
+    "sep_research/preliminary_gpu_paper/article2/data/main_series/background.json": "a4d1647020c344a7522ad2880f0d6b052ccf307acf0c586d995d319ee32ff9f1",
+    "sep_research/preliminary_gpu_paper/article2/data/main_series/conditions.json": "2a2b4c1ca168f80a8ed1490a30358fbbd8b11b848b664dbb9b45950908e08009",
+    "sep_research/preliminary_gpu_paper/article2/data/main_series/contrasts.json": "516ae58a9899467b8ac4765cedb5f832946b6b12cc4b7909333ed909fdb3d10d",
+    "sep_research/preliminary_gpu_paper/article2/data/main_series/laps.json": "73f32f2565cfdee235811a3536854f657c1564545e21d21a57a4c4a50db01662",
+    "sep_research/preliminary_gpu_paper/article2/data/main_series/selection.json": "a2b5961cdc7eebc689fa3ac127892d61b9870abf9d064f2cdbc5e388fd4e6150",
+    "sep_research/preliminary_gpu_paper/article2/data/main_series/summary.json": "c4cebf6a4b81370d417e0dabc3fa1e8f160084dcf1c80872cbc8bdbb5a8cbae2",
+    "sep_research/preliminary_gpu_paper/article2/eps/main_flows.eps": "4eaecc6f4d8473e13d29b3fc7bd60505026ab7c04f8b9ba58ae2b1ebd13cd3e5",
+    "sep_research/preliminary_gpu_paper/article2/eps/main_laps.eps": "f7acec4e94bd570511ffda6b079969047ebd2559fa1551ed80ba978ab7818bb0",
+    "sep_research/preliminary_gpu_paper/article2/eps/main_paired_deltas.eps": "f4160a687e07aa4d4c9491c0859a4e9e5e21746a96554ff916cc2d225f34e99d",
+    "sep_research/preliminary_gpu_paper/article2/eps/main_pv_speed.eps": "dd38cb6ace1cbcd094c08125ef274e46c575d6fb99c426136b5a687581c3f4ca",
+    "sep_research/preliminary_gpu_paper/article2/eps/main_stopped_fraction.eps": "6672d78666d79a0696609042b783d77be461af19e5930425ed131dc4ed8fc9a9",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_flows.pdf": "811cc88721b048bf7344e4831e146064e5a27a8a0bc48c92d4abaf913e56a3ae",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_flows.png": "ea18fab2b6bd92a4760aa9d980c7f74c08452d917537d2fec471b1f6f99b6b07",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_flows.svg": "5a39c51053f448a54f93295cff49a9c4845c47a2b66f1a257b98d8c5932e6554",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_laps.pdf": "9f9d1933e79558dec06d5544e5e0a369531dc674db94606cab766a7667a2ac80",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_laps.png": "874a11098ee404ade057522db105053356d4118593e1cd7c5872872020d1757e",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_laps.svg": "bfd407be048b416740de852444da62654683704e4b93114249cad9714bdd063a",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_paired_deltas.pdf": "1f45329ad64aba54d2d3e1835ff854d3212b996753ff6e1c2b18fd947c51f435",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_paired_deltas.png": "628684836b19f3565b42c37366e5d3ac1f7dbf8119dce63bbcf2788952ae0c8f",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_paired_deltas.svg": "3a2d6558dc1f6d54e5df2d863bc5beb27777c746d38332264ef57d5917ef64f0",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_pv_speed.pdf": "225a15e8474a42704aa3ed1590e6b3611267e0391c6b4fda192303cd64adc4ab",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_pv_speed.png": "5f5f71afc0c40d6cda495bc0c0dfacdb8df9686329ac5f3db675b73d2303b025",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_pv_speed.svg": "0f0d5d6d832e60e32015be51c8bd87fbe4dcd6341276e68450cb0748ad3a7b25",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_stopped_fraction.pdf": "2c91a33c7ad68517642de3e5e770b65b4fbb88d673b6e02ecfaf4a6a0f66b00b",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_stopped_fraction.png": "4e9807c4ace27677ebf8a58924017d5b4b70b7efcd9c6dcd5599ba9be28db662",
+    "sep_research/preliminary_gpu_paper/article2/figures/main_stopped_fraction.svg": "c3af1cf1d0bbd75f9d76e03b7ba2023bf5796e4933c5c6bfb0b28697263121f0",
+    "sep_research/preliminary_gpu_paper/article2/scripts/build_main_series.py": "c551e948a0015fef4c9e78d8734f1b49f30ecc0e7c4e145c8e3c3b27fdf8553e",
+    "sep_research/preliminary_gpu_paper/article2/scripts/test_main_series.py": "358d4fdbdd843b742a5fb1dddf629de6506cee0d21045523d66b470f8955e715",
+    "sep_research/preliminary_gpu_paper/article2/tables/main_background.tex": "5132bdcc243e8233651bd3b8490c7ac5936de17d144d6a62dea3212612dd4b2d",
+    "sep_research/preliminary_gpu_paper/article2/tables/main_contrasts.tex": "9e5a5e71e6e3a40345fe8a70bd5dbdc4d1cf48e10a770ef7649913dd345a07a3",
+    "sep_research/preliminary_gpu_paper/article2/tables/main_overview.tex": "c822c24ef5f077cbb2cc76f1cd29a6aac5117046bd63708bc1f477fa59c013d2",
+    "sep_research/preliminary_gpu_paper/article2/tables/main_selection.tex": "4527408ee43129b03651ef7309bc2536e781d985cb584e19afec33f443b513ad"
+  },
+  "physical_rows": 29700,
+  "projection_fields": [
+    "method",
+    "training_seed",
+    "density_token",
+    "fraction_token",
+    "run_index",
+    "joint_checkpoint_id",
+    "scenario_key",
+    "physical_state_hash",
+    "pre_av_tag_state_hash",
+    "priority_vehicle_id",
+    "measurement_rng_seed",
+    "warmup_rng_seed",
+    "mean_speed_priority",
+    "flow_all",
+    "flow_background",
+    "stopped_fraction_priority",
+    "mean_priority_lap_time",
+    "completed_priority_laps",
+    "flow_priority",
+    "priority_vehicle_count",
+    "vehicle_count",
+    "measurement_steps",
+    "status",
+    "split",
+    "protocol_hash"
+  ],
+  "raw_sources": [
+    {
+      "path": "sep_research/eval_selection_10m_20260925/test/raw.json",
+      "rows": 25920,
+      "sha256": "580b89b69cddaca4593efbc7c858d97f68cd527c0c8d5c49d5327cac2ed8744a"
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/jg_gpu/test/raw.json",
+      "rows": 9720,
+      "sha256": "a86bfe80a32699868655dd7fea99d6fd6b68a4b49928441c55fe39f96ce5bc82"
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/jg_gpu/test15/raw.json",
+      "rows": 8100,
+      "sha256": "159ffe02c1975b93fc6d7e4f66567564aaeaed321f67c5d96220b966b2355277"
+    }
+  ],
+  "schema": "publication_export_v1",
+  "selection_sources": [
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_fixed.json",
+      "sha256": "ce7fcc84c9a2ba2e35f5466824a39523afa779c4e67286a785660940b982e35d"
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_jg_gpu_3seed.json",
+      "sha256": "edb88efd07b66b0afad4688acdf8c36ecc96b9b8ad25d2b96db1924a5253bfc3"
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_jg_gpu_seed15.json",
+      "sha256": "7a384c5a07f9a12fc7408ed4352c4cbda4e2d9b5cf12d13d26f6250b07766c60"
+    }
+  ],
+  "source_rows": 43740,
+  "unmodified_math_functions": [
+    "indices",
+    "interval",
+    "interval_sign",
+    "seed_stats",
+    "road_difference",
+    "background_line",
+    "lap_line",
+    "index_rows",
+    "calculate",
+    "summarize"
+  ],
+  "versions": {
+    "matplotlib": "3.10.0",
+    "numpy": "2.1.2",
+    "python": "3.11.10"
+  }
+}

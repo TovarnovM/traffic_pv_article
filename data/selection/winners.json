@@ -1,0 +1,730 @@
+{
+  "metadata_discrepancies": [
+    "Top-level winners in selection_jg_gpu_3seed.json contain only seeds 20260914 and 20260916; winner for seed 20260915 comes from selection_jg_gpu_seed15.json, checked against raw joint_checkpoint_id"
+  ],
+  "schema": "publication_winner_receipts_v1",
+  "scope": "Saved top-level winners only; selection and tie-break experiments are not rerun.",
+  "sources": [
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_fixed.json",
+      "sha256": "ce7fcc84c9a2ba2e35f5466824a39523afa779c4e67286a785660940b982e35d"
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_jg_gpu_3seed.json",
+      "sha256": "edb88efd07b66b0afad4688acdf8c36ecc96b9b8ad25d2b96db1924a5253bfc3"
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_jg_gpu_seed15.json",
+      "sha256": "7a384c5a07f9a12fc7408ed4352c4cbda4e2d9b5cf12d13d26f6250b07766c60"
+    }
+  ],
+  "winners": [
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 500,
+        "joint_checkpoint_id": "5d4cc823157e4afbbd73dcb0510f1478",
+        "manifest_sha256": "6ce97a55000039cce4f0cf268ab30df1addb293800ce9e4042b17b81815d0a1b",
+        "num_agent_steps": 16384000,
+        "num_env_steps": 8192000
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "A",
+      "margin": 0.005299999999998306,
+      "mean_speed_priority": 5.740825000000001,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260914,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 500,
+          "difference": 0.010449999999998738,
+          "iterations": [
+            500,
+            611
+          ],
+          "means": {
+            "500": 5.765580000000001,
+            "611": 5.7760299999999996
+          },
+          "result_hashes": {
+            "500": "6636bdafa831db4dc1ef9c291c3080b437547e6ba7c9c06fa1e8b2d8f78e2fd2",
+            "611": "3b4954a9092144249d8860b5669dc2821ddf50f9ff88e6a384bd0ae4d89b3e37"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "A",
+        "iterations": [
+          500,
+          611
+        ],
+        "margin": 0.005299999999998306,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260914,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 600,
+        "joint_checkpoint_id": "e0e6065a07e344f18d1118eaea2e6c4a",
+        "manifest_sha256": "b1f81aa3b8e66489a5497a9836c666c12b7bfe10d4d29a23a750df249b37f7a3",
+        "num_agent_steps": 19660800,
+        "num_env_steps": 9830400
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "A",
+      "margin": 0.0023500000000007404,
+      "mean_speed_priority": 5.7455750000000005,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260915,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 600,
+          "difference": -0.002100000000000435,
+          "iterations": [
+            600,
+            611
+          ],
+          "means": {
+            "600": 5.78635,
+            "611": 5.784249999999999
+          },
+          "result_hashes": {
+            "600": "7bd162035a1cb91b7a23867a5de82ac7e643933118058a2dacdf277248694094",
+            "611": "806e8638628a753000e78200bc36555dee9353246988948f6efcb08f41c015a6"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "A",
+        "iterations": [
+          600,
+          611
+        ],
+        "margin": 0.0023500000000007404,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260915,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 450,
+        "joint_checkpoint_id": "d730c194d5924add8c518f686e7e2b39",
+        "manifest_sha256": "5f9318d5b155fff6560df0fa59c6c893f938121d0ee38eecd9588ccae8696fb0",
+        "num_agent_steps": 14745600,
+        "num_env_steps": 7372800
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "A",
+      "margin": 0.0002999999999993008,
+      "mean_speed_priority": 5.73355,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260916,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 450,
+          "difference": -0.026010000000002087,
+          "iterations": [
+            450,
+            611
+          ],
+          "means": {
+            "450": 5.7763100000000005,
+            "611": 5.750299999999998
+          },
+          "result_hashes": {
+            "450": "f7ddfdf1b7508a6ab43803188df79d6fc5481adb5923e6ec93d2190129dd11a0",
+            "611": "3f67dc62accae46806e7cf2e46a47d876684a4d44ae2baab8455654525f1bfa5"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "A",
+        "iterations": [
+          450,
+          611
+        ],
+        "margin": 0.0002999999999993008,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260916,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 550,
+        "joint_checkpoint_id": "3c1f8527aead4a0eae850b751f9a91ba",
+        "manifest_sha256": "983882ca0dfe201bad25b8ccd6b7163fce8d57060370aaa3c01a8f121e006524",
+        "num_agent_steps": 18022400,
+        "num_env_steps": 9011200
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "P_L",
+      "margin": 0.0023999999999997357,
+      "mean_speed_priority": 2.481925,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260914,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 550,
+          "difference": 0.00306999999999924,
+          "iterations": [
+            550,
+            600
+          ],
+          "means": {
+            "550": 2.4942600000000006,
+            "600": 2.49733
+          },
+          "result_hashes": {
+            "550": "62e7438f0f6c1f967f599312c7a0d422af8187ea367ef5248aaeec3676142c6f",
+            "600": "813875a86fd137f7d72983914432ee01e5e995764b3598f51e3d6621e0f7c850"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "P_L",
+        "iterations": [
+          550,
+          600
+        ],
+        "margin": 0.0023999999999997357,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260914,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 500,
+        "joint_checkpoint_id": "e56c1a8eee7244c6bcd26b94bf874266",
+        "manifest_sha256": "9ffa397a2be5e6b55110d56b373c3acc0f8bb6546af8544c321873fb1759a743",
+        "num_agent_steps": 16384000,
+        "num_env_steps": 8192000
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "P_L",
+      "margin": 0.0651250000000001,
+      "mean_speed_priority": 2.4827,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260915,
+      "status": "selected",
+      "tie": null
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 500,
+        "joint_checkpoint_id": "47af1ac3696d446ba861cfd8b6dfe371",
+        "manifest_sha256": "6e3de6d9d7ae6524c24e87231b4da019a61afce902626ee175c14af6f2b776c2",
+        "num_agent_steps": 16384000,
+        "num_env_steps": 8192000
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "P_L",
+      "margin": 0.006099999999999994,
+      "mean_speed_priority": 2.487075,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260916,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 500,
+          "difference": 0.000360000000000138,
+          "iterations": [
+            500,
+            550
+          ],
+          "means": {
+            "500": 2.49249,
+            "550": 2.4928500000000002
+          },
+          "result_hashes": {
+            "500": "75e57565d03eb221d6cbd969bba1e459857ca8d4e327623efdae9837831357a5",
+            "550": "0bf5059ad8d0827eb193c9721d0af8b7fd1958eecd7e5f3458a2ad8b8adf46d7"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "P_L",
+        "iterations": [
+          500,
+          550
+        ],
+        "margin": 0.006099999999999994,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260916,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "authorized_segment_contract",
+        "iteration": 500,
+        "joint_checkpoint_id": "ed8650ecd2c445a3b0d2dbfc493a42fb",
+        "manifest_sha256": "2365db0cff5508b5ea38ed1dbd06c1621d6474f5464e7e9448f7226c961991a1",
+        "num_agent_steps": 16384000,
+        "num_env_steps": 8192000
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "P_G",
+      "margin": 0.000800000000000356,
+      "mean_speed_priority": 2.48285,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260914,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 500,
+          "difference": -0.0026199999999998447,
+          "iterations": [
+            500,
+            611
+          ],
+          "means": {
+            "500": 2.4968800000000004,
+            "611": 2.4942600000000006
+          },
+          "result_hashes": {
+            "500": "528a1dfda176b81f6fdd7f5d827fb0083751422bc608365686e521e2090bbd90",
+            "611": "62e7438f0f6c1f967f599312c7a0d422af8187ea367ef5248aaeec3676142c6f"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "P_G",
+        "iterations": [
+          500,
+          611
+        ],
+        "margin": 0.000800000000000356,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260914,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 450,
+        "joint_checkpoint_id": "fe5069ee54524c93a7c96d19fd3de292",
+        "manifest_sha256": "529ae07c69d92bdeea005573cb2c7c94ecc6b9da7cf0436aa3c372bd57696529",
+        "num_agent_steps": 14745600,
+        "num_env_steps": 7372800
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "P_G",
+      "margin": 0.0019500000000003403,
+      "mean_speed_priority": 2.481925,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260915,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 450,
+          "difference": 0.0012299999999996203,
+          "iterations": [
+            450,
+            550
+          ],
+          "means": {
+            "450": 2.4942600000000006,
+            "550": 2.49549
+          },
+          "result_hashes": {
+            "450": "62e7438f0f6c1f967f599312c7a0d422af8187ea367ef5248aaeec3676142c6f",
+            "550": "d7334f696660901ba3b0bb05e04808a06cd78d7ca811873af3db9496ff2276bb"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "P_G",
+        "iterations": [
+          450,
+          550
+        ],
+        "margin": 0.0019500000000003403,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260915,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 450,
+        "joint_checkpoint_id": "ba4350b3247c409ba072744d82bfed3b",
+        "manifest_sha256": "1b5beee27cccf38d426feddb2fbc656e5c16ddb927faa8677196467854510dfe",
+        "num_agent_steps": 14745600,
+        "num_env_steps": 7372800
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "P_G",
+      "margin": 0.0,
+      "mean_speed_priority": 2.476425,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260916,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 450,
+          "difference": 0.0,
+          "iterations": [
+            450,
+            500
+          ],
+          "means": {
+            "450": 2.4944800000000003,
+            "500": 2.4944800000000003
+          },
+          "result_hashes": {
+            "450": "5635ae5c8f276dfb392ae00e8800932bb3ba167260ef785c8b847892303faab0",
+            "500": "5635ae5c8f276dfb392ae00e8800932bb3ba167260ef785c8b847892303faab0"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "P_G",
+        "iterations": [
+          450,
+          500
+        ],
+        "margin": 0.0,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260916,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 450,
+        "joint_checkpoint_id": "2f3e15090c4348aeab141b61a9f74394",
+        "manifest_sha256": "916f2616b52d3ba633bc75352d935256d629b1c147a0830b275204f88232d5e6",
+        "num_agent_steps": 14745600,
+        "num_env_steps": 7372800
+      },
+      "excluded_rejected_anomaly": [
+        550,
+        600
+      ],
+      "family": "J_L",
+      "margin": 0.024650000000000283,
+      "mean_speed_priority": 5.71165,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260914,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 450,
+          "difference": -0.0002099999999991553,
+          "iterations": [
+            450,
+            500
+          ],
+          "means": {
+            "450": 5.760009999999999,
+            "500": 5.7598
+          },
+          "result_hashes": {
+            "450": "a4e0162f04caaeba712ceeab86c6b121a74737e403fa0d1ccd6d5c91b7f8511d",
+            "500": "1c222de2adb3a901e98cc7a8a725de86bd1f5981ac9faf35e308d1d073679a6e"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "J_L",
+        "iterations": [
+          450,
+          500
+        ],
+        "margin": 0.024650000000000283,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260914,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 550,
+        "joint_checkpoint_id": "efa014231a9e4f5e951b0393d0571ada",
+        "manifest_sha256": "5fa886936175e5e3dc3eb7a590dd78b20a9723011accc6152db21047e4535270",
+        "num_agent_steps": 18022400,
+        "num_env_steps": 9011200
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "J_L",
+      "margin": 0.0030000000000001137,
+      "mean_speed_priority": 5.784075,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260915,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 550,
+          "difference": 0.010189999999998811,
+          "iterations": [
+            550,
+            600
+          ],
+          "means": {
+            "550": 5.79147,
+            "600": 5.801659999999999
+          },
+          "result_hashes": {
+            "550": "0d302ab0a788d1d9ccb5011ceb380b235651145445111fb2dc6f8c64e12030ea",
+            "600": "30a691786d2a8e7d9c875fdf0deec3e69efddcd26acf3c50e0dbc10502cd3e26"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "J_L",
+        "iterations": [
+          550,
+          600
+        ],
+        "margin": 0.0030000000000001137,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260915,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "origin_contract",
+        "iteration": 450,
+        "joint_checkpoint_id": "c46647c406234353b559f446cbdc5ceb",
+        "manifest_sha256": "6a9f32ec1f6e6725df8a06e771f8cf4c1a2415902c33e9e3e0cffd9b912cbd7b",
+        "num_agent_steps": 14745600,
+        "num_env_steps": 7372800
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "J_L",
+      "margin": 0.014774999999999316,
+      "mean_speed_priority": 5.768549999999999,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260916,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 450,
+          "difference": 0.012089999999999712,
+          "iterations": [
+            450,
+            611
+          ],
+          "means": {
+            "450": 5.79417,
+            "611": 5.80626
+          },
+          "result_hashes": {
+            "450": "eb93fff3d9f278ced69835cfa2863d0317531719e9d363a9f039179f2d665dc6",
+            "611": "cc8613c45968ba0c5643b5c36ce7ebe0edeaadea1b0213489ebecc28afdc87f8"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "J_L",
+        "iterations": [
+          450,
+          611
+        ],
+        "margin": 0.014774999999999316,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260916,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "gpu_duplicate_run_contract",
+        "iteration": 450,
+        "joint_checkpoint_id": "eb5a642eebf046789ada0ee242b3091f",
+        "manifest_sha256": "2acb70a81cc1582c8ff922b69412679d0338e18c283f4e97954f3e3f9335e709",
+        "num_agent_steps": 14745600,
+        "num_env_steps": 7372800
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "J_G",
+      "margin": 0.024399999999999977,
+      "mean_speed_priority": 5.7363,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260914,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 450,
+          "difference": 0.024020000000000152,
+          "iterations": [
+            450,
+            611
+          ],
+          "means": {
+            "450": 5.7598,
+            "611": 5.78382
+          },
+          "result_hashes": {
+            "450": "1c222de2adb3a901e98cc7a8a725de86bd1f5981ac9faf35e308d1d073679a6e",
+            "611": "c9bf49926697accfbd6cf67a95a76eadd1d535b031a6d8d2d6837add1d5860ca"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "J_G",
+        "iterations": [
+          450,
+          611
+        ],
+        "margin": 0.024399999999999977,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260914,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "gpu_duplicate_run_contract",
+        "iteration": 450,
+        "joint_checkpoint_id": "ad313fdf0bc94a30b53224150ef2d4ef",
+        "manifest_sha256": "af45d2556ea2c5ce245a7a81df705a1aea7ac3139fb70f3179b000f1f7885fb6",
+        "num_agent_steps": 14745600,
+        "num_env_steps": 7372800
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "J_G",
+      "margin": 0.005149999999999544,
+      "mean_speed_priority": 5.742825,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260916,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 450,
+          "difference": 0.00027000000000043656,
+          "iterations": [
+            450,
+            611
+          ],
+          "means": {
+            "450": 5.75972,
+            "611": 5.75999
+          },
+          "result_hashes": {
+            "450": "efa45c75fc7aa7849ec55f353080f5f7cc579b7e09440f47250288a8cf8a73d6",
+            "611": "f95ecb834a3ea645905b872ae383da63686cc945f5916102aeff8386b19fe447"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "J_G",
+        "iterations": [
+          450,
+          611
+        ],
+        "margin": 0.005149999999999544,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260916,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    },
+    {
+      "candidate": {
+        "contract_source": "gpu_duplicate_run_contract",
+        "iteration": 500,
+        "joint_checkpoint_id": "3a31f135b167427aba1270056806c2a1",
+        "manifest_sha256": "727b3b0d294d2a0237af8aa99f1fdcfc88ac83e768e6020b2b29acb75392ff97",
+        "num_agent_steps": 16384000,
+        "num_env_steps": 8192000
+      },
+      "excluded_rejected_anomaly": [],
+      "family": "J_G",
+      "margin": 0.0026999999999999247,
+      "mean_speed_priority": 5.76995,
+      "rejected_guard_all_flagged": false,
+      "seed": 20260915,
+      "status": "selected_after_tiebreak",
+      "tie": {
+        "decision": {
+          "chosen": 500,
+          "difference": -0.010239999999998695,
+          "iterations": [
+            500,
+            611
+          ],
+          "means": {
+            "500": 5.79019,
+            "611": 5.779950000000001
+          },
+          "result_hashes": {
+            "500": "9ba8355b98b36b994b372baa3086bf80b6a33a29ad8ead3fa3d9c65d73d079ed",
+            "611": "accbf646ed2aa488c93c41c25d25f1c0288ba499ad5fe660bbaa8b11cacc3582"
+          },
+          "rule": "remaining_difference_below_threshold_choose_earlier",
+          "runs": 50,
+          "threshold": 0.05
+        },
+        "family": "J_G",
+        "iterations": [
+          500,
+          611
+        ],
+        "margin": 0.0026999999999999247,
+        "root": 620000,
+        "runs": 50,
+        "seed": 20260915,
+        "status": "resolved",
+        "threshold": 0.05
+      }
+    }
+  ]
+}

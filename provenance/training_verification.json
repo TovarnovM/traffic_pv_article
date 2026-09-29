@@ -1,0 +1,92 @@
+{
+  "schema": "training_verification_v1",
+  "tests_passed": 8,
+  "test_command": "python -m unittest discover -s review/tests -p test_training_progress.py -v",
+  "isolated_public_copy": true,
+  "isolated_copy_inputs": [
+    "analysis/training_progress.py",
+    "tests/test_training_progress.py",
+    "data/training/"
+  ],
+  "export_replay_identical": true,
+  "isolated_reference_figures_identical": true,
+  "figure_replay_formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "references": [
+    {
+      "path": "results/training/pv_speed_mean.pdf",
+      "bytes": 95019,
+      "sha256": "3a146bf3f6695d110e299e02833ed455ff422f9163a57b18514c202c7b180e38"
+    },
+    {
+      "path": "results/training/pv_speed_mean.png",
+      "bytes": 394354,
+      "sha256": "4b0b9e3e18b05ec335fe9a8207797e0c9247fafefed184726c46a25fd81f6233"
+    },
+    {
+      "path": "results/training/pv_speed_mean.svg",
+      "bytes": 308745,
+      "sha256": "9179bcb540087269aa85f65f9f2867b5440efef5e6d962211f8a2888a4c07c3a"
+    },
+    {
+      "path": "results/training/team_return_mean.pdf",
+      "bytes": 94202,
+      "sha256": "0ba4950d9a2436352f8e2edf1ce005c31fbacc8c99f57700128ae8da84b76e10"
+    },
+    {
+      "path": "results/training/team_return_mean.png",
+      "bytes": 396411,
+      "sha256": "dc4a65247f3640f93d71829a384096d4e4fa1cdd4c69e9b41542b5c1db5dae76"
+    },
+    {
+      "path": "results/training/team_return_mean.svg",
+      "bytes": 302075,
+      "sha256": "988bd5ae3c023a02096f62993376434ef3f050d869b4d73393e5d36cb4cc4f2a"
+    }
+  ],
+  "public_inputs_and_code": [
+    {
+      "path": "analysis/training_progress.py",
+      "bytes": 11130,
+      "sha256": "11021e447c9e6ede7949f5902d2930c3fdff75e1f4d8fed659d5906a557d0ff5"
+    },
+    {
+      "path": "tests/test_training_progress.py",
+      "bytes": 7576,
+      "sha256": "0efb1b982a5e53bb707c9ec87d2f235b9313268b83105ad5e941ca79e9da32c9"
+    },
+    {
+      "path": "docs/TRAINING_PROGRESS.md",
+      "bytes": 7365,
+      "sha256": "441eaf1603961609478ed865e831eff80daf30343af303821d5dd85901409725"
+    },
+    {
+      "path": "provenance/training_commands.md",
+      "bytes": 2023,
+      "sha256": "75df57f6644ffb6147a7b771e5341346240f46ea7069d9f4c7d76c4e22ac2d9f"
+    },
+    {
+      "path": "data/training/manifest.json",
+      "bytes": 45715,
+      "sha256": "5d67e24d3705e4473cee58e2eb1bedec45d26b86d7a9cb8f54ab38a478db79c6"
+    },
+    {
+      "path": "data/training/progress.jsonl.gz",
+      "bytes": 204228,
+      "sha256": "dd988ba9cf88ead0ba2f742f96e7233980ff86a54e112619902d555f163ad9f6"
+    },
+    {
+      "path": "provenance/training_export.json",
+      "bytes": 1528,
+      "sha256": "aeb305103811cfd0cb266b0db4a288af3043131051f45616a4cdd7a9bc932138"
+    }
+  ],
+  "warnings": "Existing Matplotlib/Pyparsing deprecation warnings; tests passed.",
+  "limitations": [
+    "Public tests validate source-hash schema and mapping, not absent original source bytes.",
+    "Same-runtime byte determinism verified; cross-runtime rendering/compression bytes not guaranteed."
+  ]
+}

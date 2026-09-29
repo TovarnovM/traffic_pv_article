@@ -1,0 +1,385 @@
+{
+  "bootstrap_indices_sha256": "31570bfa5ee6a78ee36a9b47ae292b704f9fe9f8b634975d71c33000cc5579c3",
+  "figures": {
+    "flows": {
+      "eps_transparency": "opaque white-preblended 9% fills",
+      "interval_scope": "pointwise 30 shared roads conditional on fixed models",
+      "legend_entries": 9,
+      "panel_methods": [
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ]
+      ],
+      "width_inches": 5.65
+    },
+    "laps": {
+      "eps_transparency": "opaque white-preblended 9% fills",
+      "interval_scope": "pointwise 30 shared roads conditional on fixed models",
+      "legend_entries": 9,
+      "panel_methods": [
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ]
+      ],
+      "width_inches": 5.65
+    },
+    "paired_deltas": {
+      "eps_transparency": "opaque white-preblended 9% fills",
+      "interval_scope": "pointwise 30 shared roads conditional on fixed models",
+      "legend_entries": 9,
+      "panel_methods": [
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ]
+      ],
+      "width_inches": 5.65
+    },
+    "pv_speed": {
+      "eps_transparency": "opaque white-preblended 9% fills",
+      "interval_scope": "pointwise 30 shared roads conditional on fixed models",
+      "legend_entries": 9,
+      "panel_methods": [
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ]
+      ],
+      "width_inches": 5.65
+    },
+    "stopped_fraction": {
+      "eps_transparency": "opaque white-preblended 9% fills",
+      "interval_scope": "pointwise 30 shared roads conditional on fixed models",
+      "legend_entries": 9,
+      "panel_methods": [
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ],
+        [
+          "A",
+          "P_L",
+          "P_G",
+          "J_L",
+          "J_G",
+          "B1",
+          "B2",
+          "N",
+          "L"
+        ]
+      ],
+      "width_inches": 5.65
+    }
+  },
+  "four_tables_byte_identical": true,
+  "isolation": {
+    "arbitrary_cwd": true,
+    "copied_parts": [
+      "analysis/",
+      "data/evaluation/",
+      "data/selection/",
+      "tests/test_publication.py",
+      "provenance/publication_reference.json"
+    ],
+    "default_output_exercised": true,
+    "denial_probe_passed": true,
+    "interpreter_isolated_flag": true,
+    "limitation": "Python audit-hook file access guard; not an OS mount namespace or security sandbox.",
+    "local_module_paths_checked": true,
+    "passed": true,
+    "source_workspace_python_file_access_denied": true,
+    "tests": 13
+  },
+  "json_byte_parity": {
+    "background": true,
+    "conditions": true,
+    "contrasts": true,
+    "laps": true,
+    "summary": true
+  },
+  "logical_rows": 30780,
+  "metric_hashes_match": true,
+  "module_files": {
+    "publication": "analysis/publication.py",
+    "publication_inputs": "analysis/publication_inputs.py",
+    "publication_style": "analysis/publication_style.py"
+  },
+  "original_artifacts_rechecked_unchanged": true,
+  "physical_rows": 29700,
+  "png_byte_parity": {
+    "main_flows.png": true,
+    "main_laps.png": true,
+    "main_paired_deltas.png": true,
+    "main_pv_speed.png": true,
+    "main_stopped_fraction.png": true
+  },
+  "selected_models": 15
+}

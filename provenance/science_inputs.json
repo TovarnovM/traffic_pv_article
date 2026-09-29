@@ -1,0 +1,30 @@
+{
+  "historical_minimal_manifest_python_count": 59,
+  "initial_state_assessment": {
+    "artifacts": [
+      "sep_research/manifests/test_seeds.json",
+      "sep_research/manifests/validation_seeds.json",
+      "sep_research/manifests/development_seeds.json",
+      "three finalized prepared plans and provenance.json files listed in file_shortlist",
+      "per-road raw state hashes and priority_vehicle_id; selected bundle manifests and run configs"
+    ],
+    "generators": [
+      "sep_research/protocol.py:seed_manifest",
+      "sep_research/evaluate.py:prepare_group",
+      "research/evaluate_pv_graph_ppo.py:_warm_snapshot",
+      "src/snfs_traffic/scenarios/init.py",
+      "src/snfs_traffic/scenarios/priority.py",
+      "src/snfs_traffic/simulator.py"
+    ],
+    "limits": "No serialized warmed TrafficState arrays located in inspected finalized waves; source creates states in memory. State hashes attest equality but cannot reconstruct arrays. Seeds alone omit physical parameters, backend/RNG implementations, dtypes/order, assignment rules, model versions/weights and deterministic inference rules. Sufficient recipe for re-evaluation with selected bundles and pinned code/runtime, not a claim of cross-version bitwise equivalence or exact training restart. Training additionally needs optimizer/algorithm state, segment RNG seeds, worker counts, seed guards/audits and non-restored environment/cache/episode state disclosures.",
+    "recipe": "540 physical roads: 18 densities x30 runs, 1000-step all-HDV warmup, one seeded PV assignment, nested AV subsets 90/95/100%, measurement RNG reset for 2000 steps. Five seed fields: scenario_seed, warmup_rng_seed, measurement_rng_seed, assignment_seed, av_selection_seed. Test root 710009, validation root 610003; tie-break root 620000 with family/seed-specific receipts."
+  },
+  "inputs": {
+    "sep_research/eval_selection_10m_20260925/test_plan_10m.json": "9c4a44ab959c7ece1d558576ccddeafbff13b4270b9fc449aa34b905981bfe45",
+    "sep_research/eval_selection_10m_20260925/test_prepared.json": "b9bbc0178d1f45354a17e835a1af348a25779b88f80fa91ef1635ebe149e7120",
+    "sep_research/preliminary_gpu_paper/article2/scripts/test_minimal_acceptance.py": "2e3b3f44f3adddf6dd614181d37cdf055b6b8e70ed765010442e526a767f7896",
+    "sep_research/preliminary_gpu_paper/article2/verification/minimal_acceptance/source_hashes.json": "3bdd5cd04a1f4fbba97e93f90cbbaaa8b98d4a3ccd788dac38da2fcb5a586584",
+    "sep_research/preliminary_gpu_paper/article2/verification/minimal_acceptance/summary.json": "c25f30899aec8f7a7fb9516804611cdd439c599d94c978491dbdc2ef3b6004c7"
+  },
+  "public_python_count": 84
+}

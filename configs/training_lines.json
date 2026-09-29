@@ -1,0 +1,3234 @@
+{
+  "lines": [
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260914,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 1477531505,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "A",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 1477531505,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "A",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262917
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261923
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260914,
+        "trainable_ids": [
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "A-20260914",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/A-20260914/run_config.json",
+      "original_sha256": "8f1449e4987985ed71ceb3150f4ecca41125780e0a06ef87b52788a1f59c68aa",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "A",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-A-20260914",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "d2c2c46c53384c429b6a8a6362d78158",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-A-20260914",
+          "source_result_hash": "182bce05cc5982150b6ecd6b2b60a7969597df8aa225e37a99358ab1d18572ef",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260914
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 1477531505,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260915,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 331508169,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "A",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 331508169,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "A",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262918
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261924
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260915,
+        "trainable_ids": [
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "A-20260915",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/A-20260915/run_config.json",
+      "original_sha256": "4f362f999a761e40d73de74ef93609ab80105568df45c016942e7155fecc6ca9",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "A",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-A-20260915",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "7a1b36bd97304939a2612dd2706f4098",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-A-20260915",
+          "source_result_hash": "c9f3c9761e033f7bbcc1e840d0f44972de5aec994a70125a0e766a60db59a0ac",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260915
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 331508169,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260916,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 2144728179,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "A",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 2144728179,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "A",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262919
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261925
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260916,
+        "trainable_ids": [
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "A-20260916",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/A-20260916/run_config.json",
+      "original_sha256": "6a709cd3c27a31ac61d4dddb8e3def5123ce60f14ed55328a06f668ca92a7a72",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "A",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-A-20260916",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "fc3f2e8228564fd68820124081b3c6c2",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-A-20260916",
+          "source_result_hash": "790d9868ab5a14fb693a2eb9635ca0ca6a8b7cdc3c565649d60968e5dac84952",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260916
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 2144728179,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260914,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 1477531505,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "J_L",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 1477531505,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "J_L",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262917
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261923
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260914,
+        "trainable_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "J_L-20260914",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/J_L-20260914/run_config.json",
+      "original_sha256": "8bfd2bf47c7c430922680013b7686d1cf8d3193257497f5c0356dc74670e647c",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "J_L",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-J_L-20260914",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "727b498edbcb47eabcba71cc3ec9bd29",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-J_L-20260914",
+          "source_result_hash": "a1d2b1f8082c499346e6d0c44ed378839de3d968540ca8c4e5a6f1bb0cfb254b",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260914
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 1477531505,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260915,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 331508169,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "J_L",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 331508169,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "J_L",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262918
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261924
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260915,
+        "trainable_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "J_L-20260915",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/J_L-20260915/run_config.json",
+      "original_sha256": "d41ebf674342176139336947ef31a4ce796fb66a07a72b6089032964e707aebc",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "J_L",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-J_L-20260915",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "3e89339f5d3d4330a1eb2d1da978c77f",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-J_L-20260915",
+          "source_result_hash": "a21468dc9bd7788b018263974e4014e0f4fa848fb2544eeffb9e5dbd36f8a299",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260915
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 331508169,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260916,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 2144728179,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "J_L",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 2144728179,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "J_L",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262919
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261925
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260916,
+        "trainable_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "J_L-20260916",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/J_L-20260916/run_config.json",
+      "original_sha256": "ac50ceed66f655f8bf86dd99cd88f32bc507b347a59f6b8fb2211e16514e6715",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "J_L",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-J_L-20260916",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "4bbcf684116a47fab18e09e277e206ef",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-J_L-20260916",
+          "source_result_hash": "cd253f306bcec21e497bd12ec573d2bcc8990bcda23cec630f92c21dc29a16db",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260916
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 2144728179,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "candidate_segment_contracts": [
+        {
+          "candidate_iteration": 450,
+          "continuation": {
+            "base_training_seed": 20260914,
+            "schema": "sep_amendment_segment_rng_v1",
+            "segment_seed": 1477531505,
+            "start_iteration": 306
+          },
+          "env_seed": 1477531505,
+          "original_path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260914/run_config.segment_450.json",
+          "original_sha256": "44aa8c71ce51edce7f4f2e8d4507608d592b09a982bb3c93187dd525f0167acb",
+          "rllib_seed": 1477531505
+        },
+        {
+          "candidate_iteration": 500,
+          "continuation": {
+            "base_training_seed": 20260914,
+            "schema": "sep_amendment_segment_rng_v1",
+            "segment_seed": 1477531505,
+            "start_iteration": 306
+          },
+          "env_seed": 1477531505,
+          "original_path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260914/run_config.segment_500.json",
+          "original_sha256": "44aa8c71ce51edce7f4f2e8d4507608d592b09a982bb3c93187dd525f0167acb",
+          "rllib_seed": 1477531505
+        },
+        {
+          "candidate_iteration": 550,
+          "continuation": {
+            "base_training_seed": 20260914,
+            "schema": "sep_amendment_segment_rng_v1",
+            "segment_seed": 1477531505,
+            "start_iteration": 306
+          },
+          "env_seed": 1477531505,
+          "original_path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260914/run_config.segment_550.json",
+          "original_sha256": "44aa8c71ce51edce7f4f2e8d4507608d592b09a982bb3c93187dd525f0167acb",
+          "rllib_seed": 1477531505
+        }
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260914,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 1195959592,
+          "start_iteration": 575
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "P_G",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "graph_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 1195959592,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "P_G",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262917
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_graph_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261923
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "graph_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 8589934592,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260914,
+        "trainable_ids": [
+          "pv_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "P_G-20260914",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_003",
+          "611": "attempt_003"
+        },
+        "heterogeneous": true,
+        "notes": [
+          "candidate 450 belongs to attempt_002 segment seed=1477531505 start=306",
+          "candidate 500 belongs to attempt_002 segment seed=1477531505 start=306",
+          "candidate 550 belongs to attempt_002 segment seed=1477531505 start=306"
+        ],
+        "origin_attempt": "attempt_003"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260914/run_config.json",
+      "original_sha256": "e3567fbcc6e14b04527f2d243544ddf8fb88c3a48781dc81daee10e7f24d4827",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "discarded_completed_env_steps": 180224,
+          "discarded_iterations": [
+            576,
+            577,
+            578,
+            579,
+            580,
+            581,
+            582,
+            583,
+            584,
+            585,
+            586
+          ],
+          "family": "P_G",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-P_G-20260914",
+          "segment_boundaries": [
+            0,
+            306,
+            575,
+            611
+          ],
+          "source_checkpoint_id": "9862b2bc75e04fd18bcf9e4094a7d929",
+          "source_kind": "partial_continuation",
+          "source_plan_hash": "1df32166fe89adc3ab4d5b1bd3478d01fed6653ac5ed781ebe23faf1f972bc78",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-P_G-20260914",
+          "source_result_hash": "bf3f0a95ba8849bb688709f25a9f183fbc8f3c1d368f7fb9defb2dbd7217aed6",
+          "start_iteration": 575,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260914
+        }
+      ],
+      "resume_semantics": {
+        "bitwise": false,
+        "boundary_note": "the line history gains a second authorized resume boundary at 575, so boundary_comparability is heterogeneous; earlier campaign candidates 450/500/550 stay owned by the preserved attempt_002 source and are not re-declared by this plan",
+        "discarded_iterations": [
+          576,
+          577,
+          578,
+          579,
+          580,
+          581,
+          582,
+          583,
+          584,
+          585,
+          586
+        ],
+        "discarded_note": "iterations 576..586 were computed but never checkpointed and are DISCARDED, not credited",
+        "resume_only_from": "saved checkpoint 575; resume never replays the killed attempt",
+        "rng_reset": "sep_amendment_segment_rng_v1 restarts environment/cache/episode and Python/NumPy/Torch sampling RNG deterministically at the 575 boundary, exactly like every existing segment resume",
+        "saved_checkpoint": "checkpoints/iteration_000575",
+        "source_attempt": "attempt_002",
+        "source_kind": "partial_continuation",
+        "uninterrupted": false
+      },
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 1195959592,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260915,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 331508169,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "P_G",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "graph_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 331508169,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "P_G",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262918
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_graph_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261924
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "graph_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 8589934592,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260915,
+        "trainable_ids": [
+          "pv_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "P_G-20260915",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260915/run_config.json",
+      "original_sha256": "5d2d14bd282301a78321bea12591ee8117c8a032c2dd3d5fed0c3b6f308f7e5e",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "P_G",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-P_G-20260915",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "d2ba796314134b038f3792203d72d1c1",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-P_G-20260915",
+          "source_result_hash": "0e155f426cbce38c32b3c9ca7462703c85a40824de7fe66b2f9ed78f6f747217",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260915
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 331508169,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260916,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 2144728179,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "P_G",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "graph_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 2144728179,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "P_G",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262919
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_graph_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261925
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "graph_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 8589934592,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260916,
+        "trainable_ids": [
+          "pv_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "P_G-20260916",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260916/run_config.json",
+      "original_sha256": "48a0a7d4d6feedf394f7884e88b045696e719abc83e2edaa7c42f3dc961b914a",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "P_G",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-P_G-20260916",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "f7200a98d51f4209a03fd890a8224b46",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-P_G-20260916",
+          "source_result_hash": "54cce8dab5369437e763b3b1447230a40537afda22377bccda95f60a34813f15",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260916
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 2144728179,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260914,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 1477531505,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "P_L",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 1477531505,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "P_L",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262917
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261923
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260914,
+        "trainable_ids": [
+          "pv_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "P_L-20260914",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/P_L-20260914/run_config.json",
+      "original_sha256": "b4e4a1c04baa72fc04c650119e5ed251d2e6c4bb6952c967fc9216e04d3cb6fb",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "P_L",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-P_L-20260914",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "199dbf2022d241d7b7ce7b5ca4a6b761",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-P_L-20260914",
+          "source_result_hash": "8f1ef58d037e4af93b0df1c7c532b06bad131a20763fb807e0fb7514b2077455",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260914
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 1477531505,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260915,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 331508169,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "P_L",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 331508169,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "P_L",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262918
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261924
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260915,
+        "trainable_ids": [
+          "pv_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "P_L-20260915",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_002",
+          "500": "attempt_002",
+          "550": "attempt_002",
+          "600": "attempt_002",
+          "611": "attempt_002"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_002"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/P_L-20260915/run_config.json",
+      "original_sha256": "84ddcf8bd6d5279415284af7a6e78cc5bfd56cd5bf743f30ba1f1efa402c5d4a",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "P_L",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-P_L-20260915",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "1bdafc57aa284b7fb603e09413005409",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-P_L-20260915",
+          "source_result_hash": "cff508bfd9875b778ec7252ef6298f35b0e84e94733258e9d6cad4687042e5a1",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260915
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 331508169,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "continuation": {
+          "base_training_seed": 20260916,
+          "schema": "sep_amendment_segment_rng_v1",
+          "segment_seed": 2144728179,
+          "start_iteration": 306
+        },
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "P_L",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "local_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 2144728179,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "P_L",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262919
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_local_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261925
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "local_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1,
+          "num_gpus": 0,
+          "object_store_memory": 2147483648,
+          "ray_num_cpus": 36,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260916,
+        "trainable_ids": [
+          "pv_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "P_L-20260916",
+      "lineage": {
+        "candidate_attempts": {
+          "450": "attempt_003",
+          "500": "attempt_003",
+          "550": "attempt_003",
+          "600": "attempt_003",
+          "611": "attempt_003"
+        },
+        "heterogeneous": false,
+        "notes": [],
+        "origin_attempt": "attempt_003"
+      },
+      "origin_kind": "derivative_cpu_contract_adapter",
+      "original_path": "sep_research/eval_selection_10m_20260925/origins/P_L-20260916/run_config.json",
+      "original_sha256": "2c37a41b3f1f8a0c768938ed68cce890fb339184ce42572d0cda6793ab230b31",
+      "plan_runs": [
+        {
+          "candidate_iterations": [
+            450,
+            500,
+            550,
+            600,
+            611
+          ],
+          "cpu_profile_hash": "9539aded8e9466a878f336dd2d283fa566015785ad3f226b5334c767e6ba4756",
+          "family": "P_L",
+          "original_protocol_eligible": true,
+          "prefix_audit_complete": true,
+          "run_id": "cpu-v3-9539aded8e94-main-P_L-20260916",
+          "segment_boundaries": [
+            0,
+            306,
+            611
+          ],
+          "source_checkpoint_id": "4a20d12652314563895a35a49c09ed3b",
+          "source_kind": "completed_result",
+          "source_plan_hash": "64d6e655ae044994f2e313cf42ed2063adb3167773baaf46fd0ffe109fe3ef59",
+          "source_result": "inputs/cpu-v3-9539aded8e94-main-P_L-20260916",
+          "source_result_hash": "aa64e80ce0798c35950a88039943b2542e8299b30867508792a83727b42cbd38",
+          "start_iteration": 306,
+          "target_budget": 10000000,
+          "target_iteration": 611,
+          "training_seed": 20260916
+        }
+      ],
+      "resume_semantics": null,
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 2144728179,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "J_G",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "graph_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 20260914,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "J_G",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262917
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_graph_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261923
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "graph_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1.0,
+          "num_gpus": 1.0,
+          "object_store_memory": 8589934592,
+          "ray_num_cpus": 28,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260914,
+        "trainable_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "J_G-20260914",
+      "origin_kind": "training_written",
+      "original_path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260914/run_config.json",
+      "original_sha256": "d30779788773a962b7258d5961c3f0c87d5a077e34acb552a696e70725889f76",
+      "resume_segments": [
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260914/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260914/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260914/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260914/output/checkpoints/periodic_175",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260914/output/checkpoints/periodic_425",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        }
+      ],
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 20260914,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "seed_audit": {
+        "file": "seed_audit_resume_5.json",
+        "rejected_count": 0,
+        "reset_count": 3073,
+        "sha256": "4ed3b45570050151e815038923c7ab7216184ff092ad9e90e3c7f06ba9dd3325",
+        "status": "uncertified_resumed",
+        "trace_complete": false
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "J_G",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "graph_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 20260915,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "J_G",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262918
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_graph_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261924
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "graph_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1.0,
+          "num_gpus": 1.0,
+          "object_store_memory": 8589934592,
+          "ray_num_cpus": 28,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260915,
+        "trainable_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "J_G-20260915",
+      "origin_kind": "training_written",
+      "original_path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260915/run_config.json",
+      "original_sha256": "0bffd3f962407277a0e26d17c5047bd8017d036f06759d27afaaeeb16cd9d2e6",
+      "resume_segments": [
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260915/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260915/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260915/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260915/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260915/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 36,
+            "workers": 32
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260915/output/checkpoints/periodic_150",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        }
+      ],
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 20260915,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "seed_audit": {
+        "file": "seed_audit_resume_6.json",
+        "rejected_count": 0,
+        "reset_count": 7585,
+        "sha256": "81ebdea99cc4df9875e86e9a9b4bd9f407222eb3288328161803b83617bac8f0",
+        "status": "uncertified_resumed",
+        "trace_complete": false
+      },
+      "target_iteration": 611
+    },
+    {
+      "accepted_env_steps": 10010624,
+      "candidate_iterations": [
+        450,
+        500,
+        550,
+        600,
+        611
+      ],
+      "config": {
+        "budget": 10000000,
+        "env": {
+          "G": 15,
+          "P1": 0.999,
+          "P2": 0.99,
+          "P3": 0.98,
+          "P4": 0.01,
+          "S": 2,
+          "applied_penalty": 0.001,
+          "av_fraction_values": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "back_distance": 10,
+          "backend": "optimized",
+          "controller_mode": "J_G",
+          "cooldown_steps": 1,
+          "density_values": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "episode_steps": 1000,
+          "front_distance": 30,
+          "num_lanes": 4,
+          "p_lane_change": 0.5,
+          "pv_encoder": "graph_mlp",
+          "q": 0.99,
+          "r": 0.99,
+          "rejected_penalty": 0.002,
+          "road_length": 1000,
+          "seed": 20260916,
+          "seed_guard": {
+            "collision_rule": "reject_raw_draw_with_original_next_seed_before_condition",
+            "fingerprint": "844ad8ba892785c9a6ab6603e308ea7588d5ee25571efbb70ca1dc6691c5728d",
+            "manifest_rows": {
+              "development": 1620,
+              "test": 1620,
+              "validation": 20
+            },
+            "manifest_sha256": {
+              "development_seeds.json": "b8ad6ea24114989d0c003e8fc55a9304949eda55a9436a966b661811a9a0f158",
+              "test_seeds.json": "d696ae8a60867f0301734255a22c6d257537ba890d5f34b08685cdc6f9675c4c",
+              "validation_seeds.json": "c83fea49c68f8a70961894f2dc9601ec2ef6bad3005ecb98ff15b71ac16cebc8"
+            },
+            "schema": "sep_seed_guard_v1",
+            "seed_fields": [
+              "scenario_seed",
+              "warmup_rng_seed",
+              "measurement_rng_seed",
+              "assignment_seed",
+              "av_selection_seed"
+            ]
+          },
+          "sensor_distance": 60,
+          "validate": false,
+          "vmax_hdv": 5,
+          "vmax_priority": 6,
+          "warmup_cache": true,
+          "warmup_steps": 1000
+        },
+        "family": "J_G",
+        "models": {
+          "av_policy": {
+            "model": {
+              "custom_model": "sep_av_graph_v1",
+              "custom_model_config": {
+                "hidden_dim": 128,
+                "message_layers": 3
+              },
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20262919
+          },
+          "pv_policy": {
+            "model": {
+              "custom_model": "sep_pv_graph_v1",
+              "custom_model_config": {},
+              "vf_share_layers": true
+            },
+            "role_init_seed": 20261925
+          }
+        },
+        "policy_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "ppo": {
+          "clip_param": 0.2,
+          "count_steps_by": "env_steps",
+          "entropy_coeff": 0.01,
+          "gamma": 0.995,
+          "kl_coeff": 0.2,
+          "kl_target": 0.01,
+          "lambda_": 0.95,
+          "lr": 0.0002,
+          "minibatch_size": 256,
+          "num_epochs": 6,
+          "rollout_fragment_length": 256,
+          "train_batch_size": 16384,
+          "use_critic": true,
+          "use_gae": true,
+          "vf_clip_param": 10.0,
+          "vf_loss_coeff": 1.0
+        },
+        "profile": "main",
+        "pv_encoder": "graph_mlp",
+        "resources": {
+          "num_cpus_per_env_runner": 1.0,
+          "num_gpus": 1.0,
+          "object_store_memory": 8589934592,
+          "ray_num_cpus": 28,
+          "workers": 16
+        },
+        "schema": "sep_train_v1",
+        "seed": 20260916,
+        "trainable_ids": [
+          "pv_policy",
+          "av_policy"
+        ],
+        "versions": {
+          "numpy": "2.1.2",
+          "python": "3.11.10",
+          "ray": "2.56.0",
+          "torch": "2.5.1+cu118"
+        }
+      },
+      "line_id": "J_G-20260916",
+      "origin_kind": "training_written",
+      "original_path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260916/run_config.json",
+      "original_sha256": "bf8589116c7f143f66ab2a9bb7243533032b2761108247d6cc1249ed00925be3",
+      "resume_segments": [
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260916/output/checkpoints/periodic_175",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260916/output/checkpoints/periodic_175",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        },
+        {
+          "bundle": "sep_research/gpu_jg_10m/runs/20260916/output/checkpoints/periodic_200",
+          "resources": {
+            "num_cpus_per_env_runner": 1.0,
+            "num_gpus": 1.0,
+            "object_store_memory": 8589934592,
+            "ray_num_cpus": 28,
+            "workers": 16
+          },
+          "resume_semantics": "algorithm_state_non_bitwise"
+        }
+      ],
+      "rllib_execution": {
+        "batch_mode": "truncate_episodes",
+        "clip_actions": false,
+        "enable_env_runner_and_connector_v2": false,
+        "enable_rl_module_and_learner": false,
+        "framework": "torch",
+        "normalize_actions": true,
+        "num_envs_per_env_runner": 1,
+        "observation_filter": "NoFilter",
+        "sample_timeout_s": null,
+        "seed": 20260916,
+        "shuffle_batch_per_epoch": true,
+        "simple_optimizer": true
+      },
+      "seed_audit": {
+        "file": "seed_audit_resume_3.json",
+        "rejected_count": 0,
+        "reset_count": 6753,
+        "sha256": "7e6770b126719f9d2f06dfc885f315750724ed4dbfb9333efe2717d41179f5cf",
+        "status": "uncertified_resumed",
+        "trace_complete": false
+      },
+      "target_iteration": 611
+    }
+  ],
+  "projection_note": "Scientific config sections preserved; full RLlib serialized defaults, spaces, embedded sources, reserved_values (recomputable from included manifests), runtime worker logs and machine paths omitted. This projection is documentation, not a restorable historical contract.",
+  "schema": "science_training_projection_v1"
+}

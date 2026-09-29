@@ -1,0 +1,10 @@
+# Verified minimal CPU acceptance environment, Python 3.11.10.
+# Separate from requirements-analysis.txt. No installation was performed.
+numpy==2.1.2
+torch==2.5.1
+ray[rllib]==2.57.0
+numba==0.67.0
+gymnasium==1.2.2
+# Tested Torch distribution reports 2.5.1+cu118; tests hide all CUDA devices.
+# Historical training contracts target Ray 2.56.0, not this acceptance runtime.
+# This list is not a complete historical/transitive environment lock.

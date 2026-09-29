@@ -1,0 +1,1311 @@
+{
+  "schema": "training_progress_v1",
+  "row_count": 9165,
+  "source_row_base": 1,
+  "steps_per_iteration": 16384,
+  "field_paths": {
+    "CPU": {
+      "iteration": [
+        "iteration"
+      ],
+      "env_steps": [
+        "counters",
+        "num_env_steps_sampled"
+      ],
+      "pv_speed_mean": [
+        "result",
+        "env_runners",
+        "custom_metrics",
+        "v_pv_mean"
+      ],
+      "team_return_mean": [
+        "result",
+        "env_runners",
+        "custom_metrics",
+        "team_return_mean"
+      ]
+    },
+    "J_G": {
+      "iteration": [
+        "iteration"
+      ],
+      "env_steps": [
+        "num_env_steps"
+      ],
+      "pv_speed_mean": [
+        "custom_metrics",
+        "v_pv_mean"
+      ],
+      "team_return_mean": [
+        "custom_metrics",
+        "team_return_mean"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "path": "sep_research/collected_20260924/cpu/A-20260914/attempt_002/source/metrics.jsonl",
+      "sha256": "45dccb3820b6ee52e70b7a8fa6af046c5989240ea971b512c000895de330c9d0",
+      "bytes": 25549734,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/A-20260914/attempt_002/metrics.jsonl",
+      "sha256": "3951a2a24eb091df81706bebaa1f75b7c6ac65291cfda0b7bc4b156f4ae9ec68",
+      "bytes": 25473297,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/A-20260915/attempt_002/source/metrics.jsonl",
+      "sha256": "a6c622d35473a1b876e886deebb60ebbc7f650e5141ac1b0194f4adb5408c5e8",
+      "bytes": 25573223,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/A-20260915/attempt_002/metrics.jsonl",
+      "sha256": "2d41fb90b7c28191518cdb839656339f18938c55f5c00dbe1c687ef8fb77da31",
+      "bytes": 25495244,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/A-20260916/attempt_002/source/metrics.jsonl",
+      "sha256": "13863bc1c0d7ab8cefc26ca890841fb078193d988137a6db702ef246ce83df07",
+      "bytes": 25573136,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/A-20260916/attempt_002/metrics.jsonl",
+      "sha256": "754cbb7d87bc6e387c67ec0455126cb86ebb86b387f4be3a9862c59831ad7b1c",
+      "bytes": 25500121,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/J_L-20260914/attempt_002/source/metrics.jsonl",
+      "sha256": "fee3a2133d15f938dfbac05aeedf139f0e933e32d84dbc18e14c05173ab72c26",
+      "bytes": 25816184,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/J_L-20260914/attempt_002/metrics.jsonl",
+      "sha256": "8f7a0a4cafb50743a33a23124c2b35d5d00e6e87b3d24eed00f39c7a1492e2e1",
+      "bytes": 25740313,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/J_L-20260915/attempt_002/source/metrics.jsonl",
+      "sha256": "d9585381e77a4f7332c1e93beb5b6712449a7582e108e2eaf7bde5b6f97f9ae0",
+      "bytes": 25841683,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/J_L-20260915/attempt_002/metrics.jsonl",
+      "sha256": "a22926b5f38dba8858229d3479ae15122c948f2760a5a2267e733b91f73b8a60",
+      "bytes": 25761068,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/J_L-20260916/attempt_002/source/metrics.jsonl",
+      "sha256": "0785cec68d3e3eb4dfe304525ff566cdeed03703e8a06924cf43a81bbf684585",
+      "bytes": 25842442,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/J_L-20260916/attempt_002/metrics.jsonl",
+      "sha256": "98e4ec796b980a90393f7ee0aad1a58f2ea96a230779fef36c6a12f32f43520a",
+      "bytes": 25762858,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260914/attempt_003/source/source/metrics.jsonl",
+      "sha256": "31188d5458adb1e1503cab21d88f32ce4e09a523e8539820287d6c51c06c8a0e",
+      "bytes": 25977360,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260914/attempt_003/source/partial/metrics.jsonl",
+      "sha256": "999d0f366cddcd22209418727f5d11862da73cc0fd414e1a8c9295fb1b3bc4b0",
+      "bytes": 23783511,
+      "inventory_hash_verified": true,
+      "rows": 280,
+      "first_iteration": 307,
+      "last_iteration": 586
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260914/attempt_003/metrics.jsonl",
+      "sha256": "50c1568a7b83a8e79bcc5f948f3db4a0d989470d633f8c0d87e7b2324059b69a",
+      "bytes": 3041657,
+      "inventory_hash_verified": true,
+      "rows": 36,
+      "first_iteration": 576,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260915/attempt_002/source/metrics.jsonl",
+      "sha256": "3203879171717f9f523cb5971d8e4ec46d2c3795b7c8f2772cf5e4fdd30c7ecc",
+      "bytes": 26010574,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260915/attempt_002/metrics.jsonl",
+      "sha256": "8a1f61a024cc868019ba30b9dcbed150b0980ce96099a6bfe604041411e2c0df",
+      "bytes": 25929097,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260916/attempt_002/source/metrics.jsonl",
+      "sha256": "4ffac93362e6a318cd87a3d8f032f62a771b9aea6dcfcfb3523ff4fec1be3477",
+      "bytes": 25981344,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260916/attempt_002/metrics.jsonl",
+      "sha256": "44bb29822a12ed110d632268926dd05dd53055a78310873948ea43c04041cb20",
+      "bytes": 25902785,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_L-20260914/attempt_002/source/metrics.jsonl",
+      "sha256": "13bf4b6de6a0576763fefecc62d812f9ede13c07da901d68d705aab1ae686cb5",
+      "bytes": 25543137,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_L-20260914/attempt_002/metrics.jsonl",
+      "sha256": "dface2a35caff49e5fe9565127d8707a9d7b203717e1f5fd40d9d61ec6fb2d5f",
+      "bytes": 25469386,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_L-20260915/attempt_002/source/metrics.jsonl",
+      "sha256": "945e8b297ef2c5625fe91063ccba4085de9592afab092064752a942b8a67765c",
+      "bytes": 25519153,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_L-20260915/attempt_002/metrics.jsonl",
+      "sha256": "4629afbbba3d23dbbfc8fa734d25f497c41b2fa536fdaedef13a1b8acc3a44f9",
+      "bytes": 25445106,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_L-20260916/attempt_003/source/metrics.jsonl",
+      "sha256": "6caf0063ce3389085ee2d695cc54ca1c4f65f5a348be34144b7c8c0c18fb66a8",
+      "bytes": 25543238,
+      "inventory_hash_verified": true,
+      "rows": 306,
+      "first_iteration": 1,
+      "last_iteration": 306
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_L-20260916/attempt_003/metrics.jsonl",
+      "sha256": "86995a9a2ad3eed2b85e8e5bec10d7e22b422b598bc048380d3b20a57fe19354",
+      "bytes": 25472883,
+      "inventory_hash_verified": true,
+      "rows": 305,
+      "first_iteration": 307,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260914/train_metrics.jsonl",
+      "sha256": "7be4374134038151cc5a119c31f35c2c99ba3f9e0d45e23f66336736865d6c67",
+      "bytes": 3088520,
+      "inventory_hash_verified": true,
+      "rows": 611,
+      "first_iteration": 1,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260915/train_metrics.jsonl",
+      "sha256": "78b8640e798608fbad1d0dfa4ff6b5ef0ae17d3d8eb04a334162b8fe621006a3",
+      "bytes": 3086757,
+      "inventory_hash_verified": true,
+      "rows": 611,
+      "first_iteration": 1,
+      "last_iteration": 611
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260916/train_metrics.jsonl",
+      "sha256": "66ed806f0b6f30898e2d71077717aa1b6de6ce8088447987b07bfe6c18ccda74",
+      "bytes": 3084879,
+      "inventory_hash_verified": true,
+      "rows": 611,
+      "first_iteration": 1,
+      "last_iteration": 611
+    }
+  ],
+  "lines": [
+    {
+      "family": "A",
+      "seed": 20260914,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 0,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 1,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 500,
+        "receipt": 0,
+        "joint_checkpoint_id": "5d4cc823157e4afbbd73dcb0510f1478"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/A-20260914/attempt_002/plan.json",
+          "sha256": "126983c6a133012fb92276017d0ecd508e5e9a2d8f54676514733199aebcb4f9",
+          "bytes": 3732,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/A-20260914/receipt.json",
+          "sha256": "6a1b4f547ea98fcbb5add397ecde91880f9ebb5db0092b0f5c4442e867ebfbf2",
+          "bytes": 266447,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "A",
+      "seed": 20260915,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 2,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 3,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 600,
+        "receipt": 0,
+        "joint_checkpoint_id": "e0e6065a07e344f18d1118eaea2e6c4a"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/A-20260915/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/A-20260915/receipt.json",
+          "sha256": "78b217398d3ac2aae3b3682df909190c26e0c1a314b18fcbfd8ee1f7c9fb1fa9",
+          "bytes": 266443,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "A",
+      "seed": 20260916,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 4,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 5,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 450,
+        "receipt": 0,
+        "joint_checkpoint_id": "d730c194d5924add8c518f686e7e2b39"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/A-20260916/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/A-20260916/receipt.json",
+          "sha256": "998aff77014bcebdb2023eacc645ff21285c4924c3b70dc37ea3ddf6603dc81b",
+          "bytes": 266447,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "J_L",
+      "seed": 20260914,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 6,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 7,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 450,
+        "receipt": 0,
+        "joint_checkpoint_id": "2f3e15090c4348aeab141b61a9f74394"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/J_L-20260914/attempt_002/plan.json",
+          "sha256": "126983c6a133012fb92276017d0ecd508e5e9a2d8f54676514733199aebcb4f9",
+          "bytes": 3732,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/J_L-20260914/receipt.json",
+          "sha256": "eb97723468c4615ef53a7e6993c3db502c524d2fadd78e7f007aaf2ad3502344",
+          "bytes": 266506,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "J_L",
+      "seed": 20260915,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 8,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 9,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 550,
+        "receipt": 0,
+        "joint_checkpoint_id": "efa014231a9e4f5e951b0393d0571ada"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/J_L-20260915/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/J_L-20260915/receipt.json",
+          "sha256": "4eac6a496c760f777eb7d8a644e067b35f45df90d74540470d26f1531a0a4408",
+          "bytes": 266502,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "J_L",
+      "seed": 20260916,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 10,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 11,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 450,
+        "receipt": 0,
+        "joint_checkpoint_id": "c46647c406234353b559f446cbdc5ceb"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/J_L-20260916/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/J_L-20260916/receipt.json",
+          "sha256": "30902fefa67e4e7b3436fc26dbd269c87ab3980492f94a71f9e8aef211acdb40",
+          "bytes": 266506,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "P_G",
+      "seed": 20260914,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 12,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 575,
+          "source_id": 13,
+          "first_source_row": 1
+        },
+        {
+          "segment": 3,
+          "first_iteration": 576,
+          "last_iteration": 611,
+          "source_id": 14,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 500,
+        "receipt": 0,
+        "joint_checkpoint_id": "ed8650ecd2c445a3b0d2dbfc493a42fb"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation. Additional reset at 575; reject predecessor rows 576..586.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/P_G-20260914/attempt_003/plan.json",
+          "sha256": "9a07e4f1965b2c993c80ac21ffb0a0274d57ddc170e712a32dd8a90b885ae52e",
+          "bytes": 4051,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260914/receipt.json",
+          "sha256": "db694f151dd12087524648ed66f307728c118461c017e6f13281c0e2c236832c",
+          "bytes": 269804,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "P_G",
+      "seed": 20260915,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 15,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 16,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 450,
+        "receipt": 0,
+        "joint_checkpoint_id": "fe5069ee54524c93a7c96d19fd3de292"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/P_G-20260915/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260915/receipt.json",
+          "sha256": "f2be4f1c04f5faba4d9afae0545141e1a123b301a9029aa926aecb98d385379c",
+          "bytes": 269485,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "P_G",
+      "seed": 20260916,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 17,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 18,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 450,
+        "receipt": 0,
+        "joint_checkpoint_id": "ba4350b3247c409ba072744d82bfed3b"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/P_G-20260916/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/P_G-20260916/receipt.json",
+          "sha256": "59f67113b58a1f60afa8f9a788f86e3cb2d5ba11d34344b01687bf463f48b874",
+          "bytes": 269489,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "P_L",
+      "seed": 20260914,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 19,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 20,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 550,
+        "receipt": 0,
+        "joint_checkpoint_id": "3c1f8527aead4a0eae850b751f9a91ba"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/P_L-20260914/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/P_L-20260914/receipt.json",
+          "sha256": "84178bd54a4a845634c7f4767bbceff16e130e0c7bdac9c9d0fdef885ec98e7e",
+          "bytes": 266477,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "P_L",
+      "seed": 20260915,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 21,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 22,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 500,
+        "receipt": 0,
+        "joint_checkpoint_id": "e56c1a8eee7244c6bcd26b94bf874266"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/P_L-20260915/attempt_002/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/P_L-20260915/receipt.json",
+          "sha256": "3c5c2fae165e8e2749fbae9e0bc89e4b4e8a118182aeb65c146824cbcfb989b4",
+          "bytes": 266473,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "P_L",
+      "seed": 20260916,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 306,
+          "source_id": 23,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 307,
+          "last_iteration": 611,
+          "source_id": 24,
+          "first_source_row": 1
+        }
+      ],
+      "selected": {
+        "iteration": 500,
+        "receipt": 0,
+        "joint_checkpoint_id": "47af1ac3696d446ba861cfd8b6dfe371"
+      },
+      "continuity": "Segment RNG reset at 306; non-bitwise algorithm-state continuation. Earlier attempt_001 failed at 105; accepted predecessor attempt_002 was a fresh repeat from zero. Never merge failed attempt rows.",
+      "final_resume_generation": null,
+      "seed_audit_trace_complete": null,
+      "evidence": [
+        {
+          "path": "sep_research/collected_20260924/cpu/P_L-20260916/attempt_003/plan.json",
+          "sha256": "154f138e2eb4b1b8825c4522c440811611eb02287e4b8f1a900093f5f94f787c",
+          "bytes": 11246,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/origins/P_L-20260916/receipt.json",
+          "sha256": "253c4110a3a022eb2115e34ef6ca3ce284843ffd28aba117db8d93b79b2eb0e6",
+          "bytes": 266477,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "J_G",
+      "seed": 20260914,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 150,
+          "source_id": 25,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 151,
+          "last_iteration": 175,
+          "source_id": 25,
+          "first_source_row": 151
+        },
+        {
+          "segment": 3,
+          "first_iteration": 176,
+          "last_iteration": 425,
+          "source_id": 25,
+          "first_source_row": 176
+        },
+        {
+          "segment": 4,
+          "first_iteration": 426,
+          "last_iteration": 611,
+          "source_id": 25,
+          "first_source_row": 426
+        }
+      ],
+      "selected": {
+        "iteration": 450,
+        "receipt": 1,
+        "joint_checkpoint_id": "eb5a642eebf046789ada0ee242b3091f"
+      },
+      "continuity": "Retained 1..611 only; algorithm-state-only non-bitwise GPU resumes. Generation is provenance, not a continuous independent training line; seed audit trace incomplete.",
+      "final_resume_generation": 5,
+      "seed_audit_trace_complete": false,
+      "evidence": [
+        {
+          "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260914/run_config.json",
+          "sha256": "d30779788773a962b7258d5961c3f0c87d5a077e34acb552a696e70725889f76",
+          "bytes": 264766,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260914/completion_evidence_resume_5.json",
+          "sha256": "fcddac63fd3afe41f484a9aa87f43bd6edfb307fd6ed7872802727f3751aa538",
+          "bytes": 754,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "J_G",
+      "seed": 20260915,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 150,
+          "source_id": 26,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 151,
+          "last_iteration": 611,
+          "source_id": 26,
+          "first_source_row": 151
+        }
+      ],
+      "selected": {
+        "iteration": 500,
+        "receipt": 2,
+        "joint_checkpoint_id": "3a31f135b167427aba1270056806c2a1"
+      },
+      "continuity": "Retained 1..611 only; algorithm-state-only non-bitwise GPU resumes. Generation is provenance, not a continuous independent training line; seed audit trace incomplete.",
+      "final_resume_generation": 6,
+      "seed_audit_trace_complete": false,
+      "evidence": [
+        {
+          "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260915/run_config.json",
+          "sha256": "0bffd3f962407277a0e26d17c5047bd8017d036f06759d27afaaeeb16cd9d2e6",
+          "bytes": 265643,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260915/completion_evidence_resume_6.json",
+          "sha256": "4ca2ffb48a3ebe4d713ac118dd5514a1e58f4187607c62785621fb52b6f5dd1f",
+          "bytes": 954,
+          "inventory_hash_verified": true
+        }
+      ]
+    },
+    {
+      "family": "J_G",
+      "seed": 20260916,
+      "segments": [
+        {
+          "segment": 1,
+          "first_iteration": 1,
+          "last_iteration": 175,
+          "source_id": 27,
+          "first_source_row": 1
+        },
+        {
+          "segment": 2,
+          "first_iteration": 176,
+          "last_iteration": 200,
+          "source_id": 27,
+          "first_source_row": 176
+        },
+        {
+          "segment": 3,
+          "first_iteration": 201,
+          "last_iteration": 611,
+          "source_id": 27,
+          "first_source_row": 201
+        }
+      ],
+      "selected": {
+        "iteration": 450,
+        "receipt": 1,
+        "joint_checkpoint_id": "ad313fdf0bc94a30b53224150ef2d4ef"
+      },
+      "continuity": "Retained 1..611 only; algorithm-state-only non-bitwise GPU resumes. Generation is provenance, not a continuous independent training line; seed audit trace incomplete.",
+      "final_resume_generation": 3,
+      "seed_audit_trace_complete": false,
+      "evidence": [
+        {
+          "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260916/run_config.json",
+          "sha256": "bf8589116c7f143f66ab2a9bb7243533032b2761108247d6cc1249ed00925be3",
+          "bytes": 263784,
+          "inventory_hash_verified": true
+        },
+        {
+          "path": "sep_research/eval_selection_10m_20260925/jg_gpu/origins/20260916/completion_evidence_resume_3.json",
+          "sha256": "99c1a071af9ff22be333966073766ca7923897fa9b397e93da548b4ee8d399a2",
+          "bytes": 654,
+          "inventory_hash_verified": true
+        }
+      ]
+    }
+  ],
+  "selection_receipts": [
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_fixed.json",
+      "sha256": "ce7fcc84c9a2ba2e35f5466824a39523afa779c4e67286a785660940b982e35d",
+      "bytes": 4342653,
+      "inventory_hash_verified": true
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_jg_gpu_3seed.json",
+      "sha256": "edb88efd07b66b0afad4688acdf8c36ecc96b9b8ad25d2b96db1924a5253bfc3",
+      "bytes": 1407508,
+      "inventory_hash_verified": true
+    },
+    {
+      "path": "sep_research/eval_selection_10m_20260925/selection_jg_gpu_seed15.json",
+      "sha256": "7a384c5a07f9a12fc7408ed4352c4cbda4e2d9b5cf12d13d26f6250b07766c60",
+      "bytes": 751852,
+      "inventory_hash_verified": true
+    }
+  ],
+  "rejected": [
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260914/train_metrics.tail-discarded.jsonl",
+      "sha256": "69ef2fe5c3e059df5e20abc7135a4fd84856a59a729219b426daa0463888f92b",
+      "bytes": 60773,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 162,
+      "rows": 12,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260914/discarded.json",
+        "sha256": "89452e55ab1c836a3f7ee935675b03397aa1ab495f6d5d32f1b1cae571bab4ac",
+        "bytes": 1519,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": null
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen2/train_metrics.tail-discarded.jsonl",
+      "sha256": "d7832f8377a5570e2aced648ac5c20180d971945cf4ee1b5dfce0b05158c5568",
+      "bytes": 14802,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 153,
+      "rows": 3,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen2/discarded.json",
+        "sha256": "09327bc47ff2521d3ae66b2141d773c273f6b5a58ef6334a1ecc5cf7c84c72d3",
+        "bytes": 1339,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": 2
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen3/train_metrics.tail-discarded.jsonl",
+      "sha256": "5587877a7ca5c6ef5b7b73f29e42dbe8a75efc6eb96720c1b4fabc5823e71c92",
+      "bytes": 45132,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 159,
+      "rows": 9,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen3/discarded.json",
+        "sha256": "9672fd60e28da48013023aa8428e9bfc10a27bac6daa0ab448a6b661258ff32a",
+        "bytes": 1471,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": 3
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen4/train_metrics.tail-discarded.jsonl",
+      "sha256": "875c5e6642000b5b41a6ce163503aa4abfae803d32923780f905aa80995abc48",
+      "bytes": 5066,
+      "inventory_hash_verified": true,
+      "first_iteration": 176,
+      "last_iteration": 176,
+      "rows": 1,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen4/discarded.json",
+        "sha256": "79b3fdba74d1a8f22b64e1dc1b858ce5da869f7a65b992016f67af753af264ea",
+        "bytes": 1295,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 175,
+      "resume_generation": 4
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen5/train_metrics.tail-discarded.jsonl",
+      "sha256": "d8a3088096566bac918f97ca63bd0001de6c5251330f9f0b9d4883630ff163d0",
+      "bytes": 15226,
+      "inventory_hash_verified": true,
+      "first_iteration": 426,
+      "last_iteration": 428,
+      "rows": 3,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260914.gen5/discarded.json",
+        "sha256": "8000ea0dc2c5653cadbbad23d6fc55ee2dffe4609fb5ea74eb264f872660d9ad",
+        "bytes": 1339,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 425,
+      "resume_generation": 5
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260915/train_metrics.tail-discarded.jsonl",
+      "sha256": "c2085e4389f23abf71e81895950fce70bc45f7872ae9ee3513c843626fb678f4",
+      "bytes": 60806,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 162,
+      "rows": 12,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260915/discarded.json",
+        "sha256": "397783c287d89ddc3fa74634d5f01f7381ccdb96f96cbb88a7142dfd3ce6b687",
+        "bytes": 1519,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": null
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen2/train_metrics.tail-discarded.jsonl",
+      "sha256": "797785dd7b08ffad2cd077ab6d712a81c1b60d8cc84f3123facb9edc8491ac81",
+      "bytes": 14536,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 153,
+      "rows": 3,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen2/discarded.json",
+        "sha256": "ea10bf7da4a337ca53247c3d4c702aef8b0179c79ac891c19ec2e1a442ec5805",
+        "bytes": 1339,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": 2
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen3/train_metrics.tail-discarded.jsonl",
+      "sha256": "0c337366792630e1a1371b219002270972a43ebdcbdb833b9350aaeb9fd44d8a",
+      "bytes": 44935,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 159,
+      "rows": 9,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen3/discarded.json",
+        "sha256": "b8a94ed207fbfd6eae246b886683a0af5d3bb9cdc19fe70bb2c0f99c6440db33",
+        "bytes": 1471,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": 3
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen4/train_metrics.tail-discarded.jsonl",
+      "sha256": "6e9e85dbe380dc9a61911ec1a6be267633abc9a7e29b1b8ad28f41fb76340e34",
+      "bytes": 24550,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 155,
+      "rows": 5,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen4/discarded.json",
+        "sha256": "12eda28509ea775dc3ae446977e33722ba801f4eb999cf252aa42643b3ab82c0",
+        "bytes": 1383,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": 4
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen5/train_metrics.tail-discarded.jsonl",
+      "sha256": "1f73db2d56edc895c27b095f62e89ac68c865074ba4a01b9784317cc98611d61",
+      "bytes": 4444,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 151,
+      "rows": 1,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen5/discarded.json",
+        "sha256": "7eabdbd5aa94812227d460dfa7efc25877890d26c4fdd3ca192533b95802c131",
+        "bytes": 1295,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": 5
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen6/train_metrics.tail-discarded.jsonl",
+      "sha256": "fd741229b8016cdbaeb061a25da0d93d213eb6624d7bbf4d43ef835f403970fb",
+      "bytes": 15251,
+      "inventory_hash_verified": true,
+      "first_iteration": 151,
+      "last_iteration": 154,
+      "rows": 4,
+      "decision": "Discard workers32 generation5 rows151..154; generation6 resumes checkpoint150 with workers16.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260915.gen6/discarded.json",
+        "sha256": "ad3a706ce04c747794a4d140a8cca82bfd3549d566e3cdea3ecdb7a0484d04ef",
+        "bytes": 1361,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 150,
+      "resume_generation": 6,
+      "discarded_workers": 32,
+      "resumed_workers": 16
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260916/train_metrics.tail-discarded.jsonl",
+      "sha256": "edfb88e31c4780c481599181118be3a610b2285a915f464d891f266d74975f95",
+      "bytes": 40457,
+      "inventory_hash_verified": true,
+      "first_iteration": 176,
+      "last_iteration": 183,
+      "rows": 8,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260916/discarded.json",
+        "sha256": "3df8842770bb341a4fcff06fb9916db3709ed2c0ae05773b088c2066413c3754",
+        "bytes": 1430,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 175,
+      "resume_generation": null
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260916.gen2/train_metrics.tail-discarded.jsonl",
+      "sha256": "625857e70b541d4f4982d51b871b74e2ef8bdb2b850651eb05e3e8fa9e0e2ce9",
+      "bytes": 55252,
+      "inventory_hash_verified": true,
+      "first_iteration": 176,
+      "last_iteration": 186,
+      "rows": 11,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260916.gen2/discarded.json",
+        "sha256": "8891fcebf130150e2088665b1872d72274afa2c37c1921379145ccd4f9812f8e",
+        "bytes": 1516,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 175,
+      "resume_generation": 2
+    },
+    {
+      "path": "sep_research/gpu_jg_10m/resume_evidence/20260916.gen3/train_metrics.tail-discarded.jsonl",
+      "sha256": "d8fc2e9557cbe6f37fcefe51f252a8a3c1f4efa6229741aa2736187bedb24cdc",
+      "bytes": 5081,
+      "inventory_hash_verified": true,
+      "first_iteration": 201,
+      "last_iteration": 201,
+      "rows": 1,
+      "decision": "Discarded tail; never appended to accepted history.",
+      "receipt": {
+        "path": "sep_research/gpu_jg_10m/resume_evidence/20260916.gen3/discarded.json",
+        "sha256": "3df19b276911fe3fea7afb0cfdcd39636d556fa865e23fb2aedaab349828e60b",
+        "bytes": 1295,
+        "inventory_hash_verified": true
+      },
+      "checkpoint_iteration": 200,
+      "resume_generation": 3
+    },
+    {
+      "path": "historical/J_G-20260915/workers32_before_revert.jsonl",
+      "sha256": "fbb1a5026d77f91c4f90e2ddae9b9deab33c32fa95f4c52d285dcda0c4ab18a6",
+      "bytes": 772623,
+      "inventory_hash_verified": true,
+      "rows": 154,
+      "first_iteration": 1,
+      "last_iteration": 154,
+      "decision": "Optional earlier copy excluded; its 151..154 tail was discarded before workers16 resume at150."
+    },
+    {
+      "path": "sep_research/collected_20260924/gpu/J_G-20260914/output/train_metrics.jsonl",
+      "sha256": "cc84081b9c8b81de067c62e8bc07c4bde9b9134aaec1db64d0fedcd6bd1a955e",
+      "bytes": 2162879,
+      "inventory_hash_verified": true,
+      "rows": 428,
+      "first_iteration": 1,
+      "last_iteration": 428,
+      "decision": "Obsolete J_G14 history ending428 excluded; finalized611 origin is authoritative."
+    },
+    {
+      "path": "sep_research/cluster_cpu/production_v3/recovery_PL_20260916/output/metrics.jsonl",
+      "sha256": "ca5236dcafed2668b5f0be9c615547139d30d2e3f3a19882ed7f747dcf088e30",
+      "bytes": 8750284,
+      "inventory_hash_verified": true,
+      "rows": 105,
+      "first_iteration": 1,
+      "last_iteration": 105,
+      "decision": "Failed P_L16 attempt001 1..105 excluded entirely; accepted attempt002 is fresh from zero."
+    },
+    {
+      "path": "sep_research/collected_20260924/cpu/P_G-20260914/attempt_003/source/partial/metrics.jsonl",
+      "sha256": "999d0f366cddcd22209418727f5d11862da73cc0fd414e1a8c9295fb1b3bc4b0",
+      "first_iteration": 576,
+      "last_iteration": 586,
+      "first_source_row": 270,
+      "rows": 11,
+      "decision": "Uncheckpointed predecessor tail replaced by final attempt003 rows576..611."
+    }
+  ],
+  "decision_receipts": [
+    {
+      "path": "sep_research/cluster_cpu/continuation_10m_20260918/resume_pg14_575/plan.json",
+      "sha256": "9a07e4f1965b2c993c80ac21ffb0a0274d57ddc170e712a32dd8a90b885ae52e",
+      "bytes": 4051,
+      "inventory_hash_verified": true
+    },
+    {
+      "path": "sep_research/cluster_cpu/production_v3/retry_PL_20260916_attempt_002/AUTHORIZATION.json",
+      "sha256": "27e5c023660a6daf34bd15edda261ba014532558120a91e9647288d65a8ba61e",
+      "bytes": 712,
+      "inventory_hash_verified": true
+    }
+  ],
+  "excluded": [
+    "Earlier CPU J_G 306-iteration histories are separate experiments, not GPU prefixes.",
+    "Condition-specific metrics omitted, not imputed; missing conditional values remain absent from this projection.",
+    "CPU learner diagnostics omitted; finalized J_G histories contain none."
+  ],
+  "metrics": {
+    "pv_speed_mean": {
+      "units": "cells / simulation step",
+      "definition": "Saved rolling mean of completed episodes\u2019 mean priority-vehicle speed, pooled over sampled training conditions."
+    },
+    "team_return_mean": {
+      "units": "dimensionless episode reward sum",
+      "definition": "Saved rolling mean of cumulative team_reward from physical episode telemetry, counted once per environment step; not RLlib summed multi-agent episode return."
+    }
+  },
+  "data": {
+    "file": "progress.jsonl.gz",
+    "sha256": "dd988ba9cf88ead0ba2f742f96e7233980ff86a54e112619902d555f163ad9f6",
+    "bytes": 204228,
+    "uncompressed_bytes": 1886128,
+    "uncompressed_sha256": "21d4325d2324d563a620566f9ae55ccb26dec03222461b95e6a52e20b81e8a43",
+    "gzip_mtime": 0
+  }
+}
