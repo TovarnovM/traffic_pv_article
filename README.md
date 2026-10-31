@@ -1,5 +1,13 @@
 # Priority-vehicle control: article reproduction materials
 
+## Revised article — v1.1.0 candidate
+
+The current revised-article package is [reproduction/](<reproduction/README.md>): compact data, checks, eleven figure reconstructions, and the **selected weights of all 21 model configurations (31 policy states)**. The weights archive is included in Git. See its [citation](<reproduction/CITATION.cff>), [weights guide](<reproduction/WEIGHTS.md>) and [verification scope](<reproduction/VERIFICATION.md>).
+
+Use that directory's allowlist/exporter for the v1.1.0 asset. The root-level reproduction/export instructions below describe the historical original-study bundle, not the new release. This is a local candidate; no tag or release has been published by this preparation.
+
+## Historical original-study bundle
+
 Companion materials for **Separate and joint reinforcement learning for priority-vehicle passage in mixed traffic**, by Mikhail S. Tovarnov and Nikita V. Bykov.
 
 This is a separate, compact package. The working research pipeline and its local archives are not required to replay the published results and have not been moved or replaced. **The package passed 45 checks and clean-export reconstruction. Public licensing and the permanent repository/release URL still require author approval.** See [publication boundaries](docs/PUBLICATION_BOUNDARY.md).

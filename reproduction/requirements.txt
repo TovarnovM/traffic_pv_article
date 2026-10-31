@@ -1,0 +1,5 @@
+# Candidate verification runtime: Python 3.11.10.
+# No simulator, training framework, or GPU library is needed for saved-data checks.
+numpy==2.1.2
+pandas==3.0.5
+matplotlib==3.10.0

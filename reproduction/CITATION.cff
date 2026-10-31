@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the associated revised article and the specific version of this saved-data and selected-weights package. No DOI or publication date is assigned by this candidate."
+type: software
+title: "Allocating Reinforcement-Learning Control for Priority-Vehicle Passage in Mixed Traffic: reproduction materials"
+version: "1.1.0"
+authors:
+  - family-names: Tovarnov
+    given-names: Mikhail S.
+  - family-names: Bykov
+    given-names: Nikita V.
+repository-code: "https://github.com/TovarnovM/traffic_pv_article"
+abstract: "Compact per-road observations, local aggregates, retained training metrics, numerical verification, figure reconstruction, and numeric weights of the 21 selected model configurations for the revised priority-vehicle control study."
+keywords:
+  - reinforcement learning
+  - mixed traffic
+  - priority vehicle
+  - reproducibility
